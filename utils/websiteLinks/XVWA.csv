@@ -94,7 +94,6 @@ true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/missfunc/?action=view&item=1
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/php_object_injection,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/php_object_injection/?r=a:2:%7Bi:0;s:4:%22XVWA%22;i:1;s:33:%22Xtreme%20Vulnerable%20Web%20Application%22;%7D,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/redirect,Seed
-true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/redirect/redirect.php?forward=https://www.owasp.org,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/reflected_xss,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/reflected_xss/?item=ZAP,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sessionflaws,Seed
@@ -154,7 +153,6 @@ false,GET,https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_Ref
 false,GET,https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF),Out of Context
 false,GET,https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control,Out of Context
 false,GET,https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet,Out of Context
-true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/redirect/redirect.php?forward=http://www.webappsec.org/,
 false,GET,https://www.owasp.org/index.php/Guide_to_Cryptography,Out of Context
 false,GET,http://blog.portswigger.net/2015/08/server-side-template-injection.html,Out of Context
 true,GET,http://127.0.0.1:1234/xvwa/js/?C=N;O=D,

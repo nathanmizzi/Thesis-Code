@@ -14,14 +14,16 @@ hit_type = []
 
 # Contains all the Base URL's of the webpages to test on
 # list_of_source_csvs = ["BWAPP", "DVWA", "Mutillidae", "Orange_HRM", "Webgoat", "XVWA"]
-list_of_source_csvs = ["DVWA"]
+list_of_source_csvs = ["DVWA", "XVWA"]
 
-urls_to_test = []
+urls_to_test = {}
+vulnerable_urls = []
 
 directoryListPath = "utils/directoryLists/dirbuster_200.txt"
 passwordListPath = "utils/passwordLists/passlist.txt"
 subdomainListPath = "utils/subdomainLists/subdomains.txt"
 usernameListPath = "utils/usernameLists/usernames_small.txt"
+
 
 # Utilities
 
@@ -33,18 +35,19 @@ def request(url):
     except requests.exceptions.InvalidURL:
         print("Failed To Check URL: " + url)
 
+
 def getCurrentDateTime():
     currentDate = datetime.now()
     return currentDate
 
-def differenceInSeconds(stardDate, endDate):
 
+def differenceInSeconds(stardDate, endDate):
     difference = (endDate - stardDate)
 
     return difference.total_seconds()
 
-def generateReport(website_url):
 
+def generateReport(website_url):
     dateTimeToday = datetime.now().strftime('%d-%m-%Y_%H:%M:%S')
 
     report = aw.Document()
@@ -75,7 +78,7 @@ def generateReport(website_url):
     if len(successful_hit_type) > 0:
         builder.write(f"\nTypes of Successful attacks: {successful_hit_type}\n")
 
-    builder.write(f"\nTime taken to finish all attacks: {round(total_seconds,2)} Seconds\n")
+    builder.write(f"\nTime taken to finish all attacks: {round(total_seconds, 2)} Seconds\n")
 
     font = builder.font
     font.size = 24
@@ -100,7 +103,10 @@ def generateReport(website_url):
 
     report.save(f"reports/report_{dateTimeToday}.docx")
 
+
 def readCsv():
+
+    websites_urls = []
 
     for file in list_of_source_csvs:
         df = pd.read_csv('utils/websiteLinks/' + file + '.csv')
@@ -109,13 +115,14 @@ def readCsv():
             try:
                 if df.iloc[index]["Processed"] == True:
                     # print(df.iloc[index]["URI"])
-                    urls_to_test.append(df.iloc[index]["URI"])
+                    websites_urls.append(df.iloc[index]["URI"])
             except Exception as e:
                 print(e)
 
+        urls_to_test[file] = websites_urls
+
 # Brute Forcers
 def websiteBruteForce(page_url):
-
     with open(usernameListPath, "r") as usernames:
 
         for username in usernames:
@@ -148,16 +155,16 @@ def websiteBruteForce(page_url):
         print("\nUsername and password are not in wordlists.")
         return False
 
+
 # SQL Injection
 
 def get_all_forms(url):
-
     soup = bs(s.get(url).content, "html.parser")
 
     return soup.find_all("form")
 
-def get_form_details(form):
 
+def get_form_details(form):
     details = {}
 
     try:
@@ -184,7 +191,6 @@ def get_form_details(form):
 
 
 def isInjectable(response):
-
     errors = {
         "you have an error in your sql syntax;",
         "warning: mysql",
@@ -200,9 +206,10 @@ def isInjectable(response):
 
 
 def sqlInjectionScan(url):
-
     forms = get_all_forms(url)
-    print(f"[+] Detected {len(forms)} forms on {url}.")
+
+    if len(forms) >= 1:
+        print(f"[+] Detected {len(forms)} forms on {url}.")
 
     for form in forms:
         form_details = get_form_details(form)
@@ -235,39 +242,72 @@ def sqlInjectionScan(url):
 
     return False
 
+# Website authenticators
+
+def DVWA_test(urls):
+    try:
+
+        # Firstly, create a logged-in session in order to create requests
+
+        s.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
+            'Cookie': 'security=low; PHPSESSID=geo7gb3ehf5gfnbhrvuqu545i7'
+        }
+
+        resp = s.get('http://127.0.0.1/login.php')
+        parsed_html = bs(resp.content, features="html.parser")
+        input_value = parsed_html.body.find('input', attrs={'name': 'user_token'}).get("value")
+        data_dict = {"username": 'admin', "password": 'password', "Login": "Login",
+                     "user_token": input_value}
+
+        response = s.post('http://127.0.0.1/login.php', data_dict)
+
+        for url in urls["DVWA"]:
+
+            if sqlInjectionScan(url):
+
+                vulnerable_urls.append(url)
+
+                if "SQL Injection" not in successful_hit_type:
+                    successful_hit_type.append("SQL Injection")
+
+    except Exception as e:
+        print("\nDVWA Error: \n")
+        print(e)
+
+def XVWA_test(urls):
+    try:
+
+        for url in urls["XVWA"]:
+
+            if sqlInjectionScan(url):
+
+                vulnerable_urls.append(url)
+
+                if "SQL Injection" not in successful_hit_type:
+                    successful_hit_type.append("SQL Injection")
+
+    except Exception as e:
+        print("\nXVWA Error: \n")
+        print(e)
 
 if __name__ == '__main__':
 
-        # Populate array of urls from csv files
-        readCsv()
+    # Populate array of urls from csv files
+    readCsv()
 
-        # Test urls accordingly
-        with requests.Session() as s:
+    # Test urls accordingly
+    with requests.Session() as s:
 
-            try:
+        DVWA_test(urls_to_test)
 
-                s.headers = {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
-                    'Cookie': 'security=low; PHPSESSID=geo7gb3ehf5gfnbhrvuqu545i7'
-                }
+        XVWA_test(urls_to_test)
 
-                resp = s.get('http://127.0.0.1/login.php')
-                parsed_html = bs(resp.content, features="html.parser")
-                input_value = parsed_html.body.find('input', attrs={'name': 'user_token'}).get("value")
-                data_dict = {"username": 'admin', "password": 'password', "Login": "Login",
-                             "user_token": input_value}
 
-                response = s.post('http://127.0.0.1/login.php', data_dict)
+    # Urls have been tested, now output the results to the user.
 
-                print(response.content)
+    print("\nVulnerabilities were found with: " + str(len(vulnerable_urls)) + " urls.")
 
-                for url in urls_to_test:
+    for url in vulnerable_urls:
+        print("Vulnerable URL: " + url)
 
-                    print(url)
-
-                    if sqlInjectionScan(url):
-                        if "SQL Injection" not in successful_hit_type:
-                            successful_hit_type.append("SQL Injection")
-
-            except Exception as e:
-                pass
