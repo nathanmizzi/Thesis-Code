@@ -1,0 +1,39 @@
+Processed,Method,URI,Flags
+true,GET,http://localhost:8080/WebGoat/,Seed
+true,GET,http://localhost:8080/WebGoat/css,Seed
+true,GET,http://localhost:8080/WebGoat/css/animate.css,Seed
+true,GET,http://localhost:8080/WebGoat/css/coderay.css,Seed
+true,GET,http://localhost:8080/WebGoat/css/font-awesome.min.css,Seed
+true,GET,http://localhost:8080/WebGoat/css/img,Seed
+true,GET,http://localhost:8080/WebGoat/css/main.css,Seed
+true,GET,http://localhost:8080/WebGoat/js,Seed
+true,GET,http://localhost:8080/WebGoat/js/libs,Seed
+true,GET,http://localhost:8080/WebGoat/js/libs/require.min.js,Seed
+true,GET,http://localhost:8080/WebGoat/js/modernizr.min.js,Seed
+true,GET,http://localhost:8080/WebGoat/js/search.js,Seed
+true,GET,http://localhost:8080/WebGoat/login,Seed
+true,GET,http://localhost:8080/WebGoat/login?error,Seed
+true,GET,http://localhost:8080/WebGoat/login?logout,Seed
+true,GET,http://localhost:8080/WebGoat/plugins,Seed
+true,GET,http://localhost:8080/WebGoat/plugins/bootstrap,Seed
+true,GET,http://localhost:8080/WebGoat/plugins/bootstrap/css,Seed
+true,GET,http://localhost:8080/WebGoat/plugins/bootstrap/css/bootstrap.min.css,Seed
+true,GET,http://localhost:8080/WebGoat/register.mvc,Seed
+true,GET,http://localhost:8080/WebGoat/registration,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc?lang=en,Seed
+true,GET,http://localhost:8080/WebGoat/WebWolf,Seed
+true,GET,http://localhost:8080/WebGoat/welcome.mvc,Seed
+false,GET,http://daneden.me/animate,Out of Context
+false,GET,https://github.com/nickpettit/glide,Out of Context
+false,GET,http://fontawesome.io/,Out of Context
+false,GET,http://fontawesome.io/license,Out of Context
+false,GET,https://github.com/requirejs/requirejs/blob/master/LICENSE,Out of Context
+false,GET,https://modernizr.com/download/?-applicationcache-audio-backgroundsize-borderimage-borderradius-boxshadow-canvas-canvastext-cssanimations-csscolumns-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-flexbox-fontface-generatedcontent-geolocation-hashchange-history-hsla-indexeddb-inlinesvg-input-inputtypes-localstorage-multiplebgs-opacity-postmessage-rgba-sessionstorage-smil-svg-svgclippaths-textshadow-video-webgl-websockets-websqldatabase-webworkers-addtest-domprefixes-hasevent-mq-prefixed-prefixes-setclasses-shiv-testallprops-testprop-teststyles,Out of Context
+false,GET,http://www.w3.org/1999/xhtml,Out of Context
+false,GET,http://www.w3.org/2000/svg,Out of Context
+true,GET,http://localhost:8080/WebGoat/css/img/favicon.ico,
+true,POST,http://localhost:8080/WebGoat/login,
+false,GET,http://getbootstrap.com/,Out of Context
+false,GET,https://github.com/twbs/bootstrap/blob/master/LICENSE,Out of Context
+true,POST,http://localhost:8080/WebGoat/register.mvc,

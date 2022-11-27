@@ -33,6 +33,7 @@ archives
 09
 links
 01
+vulnerabilities
 08
 06
 2
@@ -58,6 +59,7 @@ security
 13
 category
 4
+sqli
 content
 14
 main

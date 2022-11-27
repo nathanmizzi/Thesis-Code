@@ -11765,6 +11765,7 @@ MSN_Search
 projekt
 jambook
 URL
+sqli
 at-tftp19
 wisi-sql
 spg-xss

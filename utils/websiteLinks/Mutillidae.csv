@@ -1,0 +1,706 @@
+Processed,Method,URI,Flags
+true,GET,http://127.0.0.1:1234/mutillidae,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/favicon.ico,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/ddsmoothmenu.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/jquery.gritter.min.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/hints-menu.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/ddsmoothmenu-init.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/gritter-init.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/hints-menu-init.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/jquery-init.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=home.php&popUpNotificationCode=HPH0,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/populate-web-storage.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=login.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/colorbox.css,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/jquery.colorbox-min.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/set-up-database.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/jquery.js,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=show-log.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=captured-data.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/ddsmoothmenu.css,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-info.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/global-styles.css,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/?page=add-to-your-blog.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=register.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=sqlmap-targets.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/jquery.gritter.css,Seed
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=view-someones-blog.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=pen-test-tool-lookup.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=pen-test-tool-lookup-ajax.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/soap/ws-user-account.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/rest/ws-user-account.php,
+true,GET,http://127.0.0.1:1234/mutillidae/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=add-to-your-blog.php,
+true,GET,http://127.0.0.1:1234/mutillidae/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=dns-lookup.php,
+true,GET,http://127.0.0.1:1234/mutillidae/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=echo.php,
+true,GET,http://127.0.0.1:1234/mutillidae/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=cors.php,
+false,GET,http://127.0.0.1:1234/,Out of Context
+false,GET,http://127.0.0.1:1234/icons/blank.gif,Out of Context
+false,GET,http://127.0.0.1:1234/icons/back.gif,Out of Context
+false,GET,http://127.0.0.1:1234/icons/folder.gif,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=content-security-policy.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php&page=document-viewer.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=capture-data.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=source-viewer.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=text-file-viewer.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=repeater.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=set-background-color.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?iv=6bc24fc1ab650b25b4114e93a98f1eba&page=view-user-privilege-level.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/soap/ws-lookup-dns-record.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=styling-frame.php&page-to-frame=styling.php%3Fpage-title%3DStyling+with+Mutillidae,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=browser-info.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-info-xpath.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=html5-storage.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=arbitrary-file-inclusion.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-poll.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=back-button-discussion.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=password-generator.php&username=anonymous,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=site-footer-xss-discussion.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=conference-room-lookup.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=xml-validator.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=privilege-escalation.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=edit-account-profile.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=jwt.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=phpinfo.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=robots-txt.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=secret-administrative-pages.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=client-side-comments.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=cache-control.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=framing.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/framer.html,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=ssl-misconfiguration.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=credits.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=client-side-control-challenge.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=directory-browsing.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-agent-impersonation.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=upload-file.php,
+false,GET,http://www.dynamicdrive.com/,Out of Context
+false,GET,http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/,Out of Context
+false,GET,http://www.dynamicdrive.com/forums/showthread.php?highlight=smooth&t=39177,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/?page=credits.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/soap/ws-hello-world.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=nice-tabby-cat.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/?page=text-file-viewer.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/?page=show-log.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-1.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-2.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-3.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-4.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-5.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-6.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-7.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-8.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-9.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-10.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-11.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-12.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-13.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-14.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-15.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-16.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-17.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-18.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-19.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-20.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-21.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-22.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-23.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-24.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-25.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-26.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-27.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-28.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-29.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-30.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-31.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-32.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-33.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-34.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-35.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-36.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-37.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-38.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-39.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-40.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-41.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-42.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-43.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-44.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-45.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-46.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-47.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-48.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-49.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-50.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-51.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-52.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-53.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-54.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-55.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-56.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-57.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-58.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-59.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-60.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-61.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-62.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-63.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=documentation/installation.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/documentation/mutillidae-installation-on-xampp-win7.pdf,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=documentation/usage-instructions.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=documentation/vulnerabilities.php,
+false,GET,https://www.sans.org/reading-room/whitepapers/application/introduction-owasp-mutillidae-ii-web-pen-test-training-environment-34380,Out of Context
+false,GET,https://github.com/webpwnized/mutillidae,Out of Context
+false,GET,https://www.owasp.org/index.php/Top_Ten,Out of Context
+false,GET,https://addons.mozilla.org/en-US/firefox/collections/jdruin/pro-web-developer-qa-pack/,Out of Context
+false,GET,http://www.youtube.com/user/webpwnized,Out of Context
+false,GET,https://twitter.com/webpwnized,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=60,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=62,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=61,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=64,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=40,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=56,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=57,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=59,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=39,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=9,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=1,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/pop-up-help-context-generator.php?pagename=/opt/lampp/htdocs/mutillidae/mutillidae/home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=./documentation/vulnerabilities.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/documentation/mutillidae-test-scripts.txt,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/configuration/openldap/mutillidae.ldif,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/coykillericon-50-38.png,
+false,GET,https://www.paypalobjects.com/en_US/i/scr/pixel.gif,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/youtube-play-icon-40-40.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/twitter-bird-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/pdf-icon-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/down_arrow_16_16.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/link-icon-16-16.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/arrow-45-degree-left-up.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/question-mark-40-61.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/help-easy-button-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/siren-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/installation-icon-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/help-icon-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/ldap-server-48-59.png,
+false,POST,https://www.paypal.com/cgi-bin/webscr,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/pop-up-help-context-generator.php?pagename=home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=login.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=login.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=login.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/pop-up-help-context-generator.php?pagename=login.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=54,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=48,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=25,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=13,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=12,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=53,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=10,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=55,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=11,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/back-button-64-64.png,
+true,POST,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=login.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php&popUpNotificationCode=L1H0,
+false,GET,http://jacklmoore.com/notes/ie-transparency-problems/,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php&popUpNotificationCode=SL1,
+false,GET,http://www.opensource.org/licenses/mit-license.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php&popUpNotificationCode=SSLE1,
+false,GET,http://jquery.com/,Out of Context
+false,GET,http://sizzlejs.com/,Out of Context
+false,GET,http://jquery.org/license,Out of Context
+false,GET,http://json.org/json2.js,Out of Context
+false,GET,http://weblogs.java.net/blog/driscoll/archive/2009/09/08/eval-javascript-global-context,Out of Context
+false,GET,http://bugs.jquery.com/ticket/12282,Out of Context
+false,GET,http://javascript.nwbox.com/IEContentLoaded/,Out of Context
+false,GET,http://perfectionkills.com/detecting-event-support-without-browser-sniffing/,Out of Context
+false,GET,https://developer.mozilla.org/en/Security/CSP,Out of Context
+false,GET,http://blindsignals.com/index.php/2009/07/jquery-delay/,Out of Context
+false,GET,http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/,Out of Context
+false,GET,http://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html,Out of Context
+false,GET,http://www.w3.org/TR/css3-selectors/,Out of Context
+false,GET,http://www.w3.org/TR/css3-syntax/,Out of Context
+false,GET,http://www.w3.org/TR/CSS21/syndata.html,Out of Context
+false,GET,http://www.w3.org/TR/selectors/,Out of Context
+false,GET,http://www.w3.org/TR/2011/REC-css3-selectors-20110929/,Out of Context
+false,GET,http://bugs.jquery.com/ticket/12359,Out of Context
+false,GET,http://api.jquery.com/jQuery.browser,Out of Context
+false,GET,https://developer.mozilla.org/en-US/docs/CSS/display,Out of Context
+false,GET,http://dev.w3.org/csswg/cssom/,Out of Context
+false,GET,http://erik.eae.net/archives/2007/07/27/18.54.15/,Out of Context
+false,GET,https://bugzilla.mozilla.org/show_bug.cgi?id=649285,Out of Context
+false,GET,https://bugzilla.mozilla.org/show_bug.cgi?id=491668,Out of Context
+false,GET,https://bugs.webkit.org/show_bug.cgi?id=29084,Out of Context
+false,GET,http://helpful.knobs-dials.com/index.php/Component_returned_failure_code:_0x80040111_,Out of Context
+false,GET,https://github.com/jquery/jquery/pull/764,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=show-log.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=captured-data.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=N;O=D,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-info.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/add-icon-32-32.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/ajax_logo-75-79.jpg,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/bullet_black.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/cage-48-48.png,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/?page=add-to-your-blog.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/cors-icon-75-75.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/delete-icon-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/down.gif,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/edit-icon-20-20.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/green-checkmark-36-36.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/information-icon-64-64.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/magnifying-glass-icon.jpeg,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/mail-icon-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/malware-icon-75-75.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/new-icon-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/red-x-24-24.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/refresh-button-48px-by-48px.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/rene-magritte-frame.jpg,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/right.gif,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/shield-icon-75-75.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/sign-post-60-75.gif,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/spider-in-web-48-48.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/sql-logo-64-64.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/up_arrow_16_16.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/upload-32-32.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/xml-logo-64-64.png,
+false,GET,http://127.0.0.1:1234/icons/image2.gif,Out of Context
+false,GET,http://127.0.0.1:1234/icons/unknown.gif,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=register.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=sqlmap-targets.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=view-someones-blog.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=pen-test-tool-lookup.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=pen-test-tool-lookup-ajax.php,Out of Context
+false,GET,http://127.0.0.1:1234/index.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/rest/127.0.0.1:1234/webservices/rest/ws-user-account.php?username=adrian,
+false,GET,http://127.0.0.1:1234/webservices/rest/ws-user-account.php?username=*,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/rest/127.0.0.1:1234/webservices/rest/ws-user-account.php?username=%6a%65%72%65%6d%79%27%20%75%6e%69%6f%6e%20%73%65%6c%65%63%74%20%63%6f%6e%63%61%74%28%27%54%68%65%20%70%61%73%73%77%6f%72%64%20%66%6f%72%20%27%2c%75%73%65%72%6e%61%6d%65%2c%27%20%69%73%20%27%2c%20%70%61%73%73%77%6f%72%64%29%2c%6d%79%73%69%67%6e%61%74%75%72%65%20%66%72%6f%6d%20%61%63%63%6f%75%6e%74%73%20%2d%2d%20,
+true,GET,http://127.0.0.1:1234/mutillidae/?C=N;O=A,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=add-to-your-blog.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/soap/ws-user-account.php?wsdl,
+false,GET,http://browsercheck/,Out of Context
+false,GET,http://makes/,Out of Context
+false,GET,http://var/,Out of Context
+false,GET,http://shows/,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/?C=M;O=D,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=dns-lookup.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/?C=S;O=D,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=echo.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/?C=D;O=D,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=cors.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php&page=document-viewer.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=content-security-policy.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=source-viewer.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=capture-data.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=repeater.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=text-file-viewer.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?iv=6bc24fc1ab650b25b4114e93a98f1eba&page=view-user-privilege-level.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=set-background-color.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=styling-frame.php&page-to-frame=styling.php%3Fpage-title%3DStyling+with+Mutillidae,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=browser-info.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/soap/ws-lookup-dns-record.php?wsdl,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-info-xpath.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=html5-storage.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-poll.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=arbitrary-file-inclusion.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=back-button-discussion.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=password-generator.php&username=anonymous,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=site-footer-xss-discussion.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=conference-room-lookup.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=xml-validator.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=privilege-escalation.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=edit-account-profile.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/bookmark-site.js,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/follow-mouse.js,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/html5-secrets.js,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=jwt.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=phpinfo.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=robots-txt.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=secret-administrative-pages.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=cache-control.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=client-side-comments.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=framing.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=ssl-misconfiguration.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/jquery.min.js,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=credits.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=directory-browsing.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=client-side-control-challenge.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=upload-file.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=user-agent-impersonation.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/?page=credits.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/webservices/soap/ws-hello-world.php?wsdl,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=D;O=A,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/?page=text-file-viewer.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=nice-tabby-cat.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/?page=show-log.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-1.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-2.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-3.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-5.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-4.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-6.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-7.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-9.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-8.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-10.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-11.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-12.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-13.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-15.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-14.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-16.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-17.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-18.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-19.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-21.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-20.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-22.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-23.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-24.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=D;O=A,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-25.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-26.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-27.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-28.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-30.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-29.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-32.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-31.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-34.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-33.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-35.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-36.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-37.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-38.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-39.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-40.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-42.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-41.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-44.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-43.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-46.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-45.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-47.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-48.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-49.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-50.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-51.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-52.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-53.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-54.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-55.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=D;O=A,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-56.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-57.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-59.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-58.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-60.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-61.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-63.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=labs/lab-62.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=documentation/installation.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=documentation/usage-instructions.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=documentation/vulnerabilities.php,Out of Context
+false,GET,https://www.youtube.com/watch?v=sJd0ir9-jSc,Out of Context
+false,GET,https://www.youtube.com/watch?v=Ry884U5YTcs,Out of Context
+false,GET,https://www.youtube.com/watch?v=eCOkyuLxhl8,Out of Context
+false,GET,http://127.0.0.1:1234/images/youtube-play-icon-40-40.png,Out of Context
+false,GET,https://www.youtube.com/watch?v=79mOiU3GfnQ,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=http://www.google.com,
+false,GET,https://www.youtube.com/watch?v=V3xCPCaaH4s,Out of Context
+false,GET,https://www.youtube.com/watch?v=eQxIPjasZqA,Out of Context
+false,GET,https://www.youtube.com/watch?v=abqyFbeFIq4,Out of Context
+false,GET,https://www.youtube.com/watch?v=bPr8yO_3kOg,Out of Context
+false,GET,https://www.youtube.com/watch?v=MB_96xLh4As,Out of Context
+false,GET,https://www.youtube.com/watch?v=ItUvwGu4Lo4,Out of Context
+false,GET,https://www.youtube.com/watch?v=lUDrlP9x6hA,Out of Context
+false,GET,https://www.youtube.com/watch?v=7ePmWhypzBI,Out of Context
+false,GET,https://www.youtube.com/watch?v=tsZdiuRNWRg,Out of Context
+false,GET,https://www.youtube.com/watch?v=jHGNLvSpaLs,Out of Context
+false,GET,https://www.youtube.com/watch?v=l18nZpYiQZM,Out of Context
+false,GET,https://www.youtube.com/watch?v=K_92lb0k9FU,Out of Context
+false,GET,https://www.youtube.com/watch?v=AsZqWHk7_bw,Out of Context
+false,GET,https://www.youtube.com/watch?v=9SL9968PgUk,Out of Context
+false,GET,https://www.youtube.com/watch?v=k0U47sS2o8g,Out of Context
+false,GET,https://www.youtube.com/watch?v=5ZpM1gQ5PuQ,Out of Context
+false,GET,https://www.youtube.com/watch?v=QLDk5zI2cdM,Out of Context
+false,GET,https://www.youtube.com/watch?v=NPVddIPYn6M,Out of Context
+false,GET,https://www.youtube.com/watch?v=iG7003AC8ys,Out of Context
+false,GET,https://www.youtube.com/watch?v=ehGsDQbMXn8,Out of Context
+false,GET,https://www.youtube.com/watch?v=7vWTEbOfa-8,Out of Context
+false,GET,https://www.youtube.com/watch?v=t0uMReqs8Ng,Out of Context
+false,GET,https://www.youtube.com/watch?v=lT56Z54K-Jo,Out of Context
+false,GET,https://www.youtube.com/watch?v=KlWZ5pKg-PM,Out of Context
+false,GET,https://www.youtube.com/watch?v=C03EUbgRLNE,Out of Context
+false,GET,https://www.youtube.com/watch?v=ISb60TrNp8U,Out of Context
+false,GET,https://www.youtube.com/watch?v=1CJB8BtW0pQ,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=home.php,
+false,GET,https://www.youtube.com/watch?v=fJYyfZNNk5A,Out of Context
+false,GET,https://www.youtube.com/watch?v=a6_TprVx7LE,Out of Context
+false,GET,https://www.youtube.com/watch?v=MpuFW_mkJ3M,Out of Context
+false,GET,https://www.youtube.com/watch?v=1lblqC2Favk,Out of Context
+false,GET,https://www.youtube.com/watch?v=ICPqz1Al9fk,Out of Context
+false,GET,https://www.youtube.com/watch?v=fa5LAfXmwoo,Out of Context
+false,GET,https://www.youtube.com/watch?v=pGCBivHNRn8,Out of Context
+false,GET,https://www.youtube.com/watch?v=b6IR2KgiOcw,Out of Context
+false,GET,https://www.youtube.com/watch?v=H2tKdwMcKnk,Out of Context
+false,GET,https://www.youtube.com/watch?v=uSfGeyJKIVA,Out of Context
+false,GET,https://www.youtube.com/watch?v=tBXX_GAK7BU,Out of Context
+false,GET,https://www.youtube.com/watch?v=K6qwqMt_Ldc,Out of Context
+false,GET,https://www.youtube.com/watch?v=KeSUiCr-WGo,Out of Context
+false,GET,https://www.youtube.com/watch?v=RVzs8aCnpHw,Out of Context
+false,GET,https://www.youtube.com/watch?v=ySzxNgQ6Qpk,Out of Context
+false,GET,https://www.youtube.com/watch?v=dId4FS_Gyn4,Out of Context
+false,GET,https://www.youtube.com/watch?v=DF22sTpcE6w,Out of Context
+false,GET,https://www.youtube.com/watch?v=X47ZkdYnGZI,Out of Context
+false,GET,https://www.youtube.com/watch?v=Eqfe_HYX7MU,Out of Context
+false,GET,https://www.youtube.com/watch?v=Hz29n-Swx1w,Out of Context
+false,GET,https://www.youtube.com/watch?v=TpNa09xn34I,Out of Context
+false,GET,https://www.youtube.com/watch?v=ixy7Fr0s9Fk,Out of Context
+false,GET,https://www.youtube.com/watch?v=7O391fuNZMk,Out of Context
+false,GET,https://www.youtube.com/watch?v=PcXZqUqBJeg,Out of Context
+false,GET,https://www.youtube.com/watch?v=lvi_NM1n5vw,Out of Context
+false,GET,https://www.youtube.com/watch?v=fXu8KWIrnK4,Out of Context
+false,GET,https://www.youtube.com/watch?v=81A_cAxusTM,Out of Context
+false,GET,https://www.youtube.com/watch?v=ZSUGfIy1ds8,Out of Context
+false,GET,https://www.youtube.com/watch?v=lKX1MIIxFCg,Out of Context
+false,GET,https://www.youtube.com/watch?v=DDbwrMrwOFc,Out of Context
+false,GET,https://www.youtube.com/watch?v=zUwPhHigi_M,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=./documentation/vulnerabilities.php,Out of Context
+false,GET,http://192.168.56.103/beef/hook/beefmagic.js.php%5C,Out of Context
+false,GET,http://192.168.56.101/mutillidae/index.php?page=view-someones-blog.php,Out of Context
+false,GET,http://localhost/mutillidae/capture-data.php?cookie,Out of Context
+false,GET,http://localhost/mutillidae/capture-data.php?html5storage,Out of Context
+false,GET,http://localhost/mutillidae/index.php?do=logout%5C,Out of Context
+false,GET,http://mutillidae/index.php,Out of Context
+false,GET,"http://localhost/mutillidae/config.inc,",Out of Context
+false,GET,http://localhost/mutillidae/passwords/accounts.txt,Out of Context
+false,GET,http://localhost/xampp,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=home.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=home.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=home.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/images/bullet_black.png,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=login.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=D;O=A,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=login.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=login.php,Out of Context
+false,GET,https://www.youtube.com/watch?v=YoNlia7B5F0,Out of Context
+false,GET,https://www.youtube.com/watch?v=yN6hjtNvhMo,Out of Context
+false,GET,https://www.youtube.com/watch?v=i0nOTA2NNDY,Out of Context
+false,GET,https://www.youtube.com/watch?v=2-U2s0akMqE,Out of Context
+false,GET,https://www.youtube.com/watch?v=JlLVhdlqe1Q,Out of Context
+false,GET,https://www.youtube.com/watch?v=inD4iQGGjb8,Out of Context
+false,GET,https://www.youtube.com/watch?v=IgOLBR9bHhE,Out of Context
+false,GET,https://www.youtube.com/watch?v=TO7pmkMh1Tg,Out of Context
+false,GET,https://www.youtube.com/watch?v=HMm5GC6bcYs,Out of Context
+false,GET,https://www.youtube.com/watch?v=leiGAuCgYY0,Out of Context
+false,GET,https://www.youtube.com/watch?v=ot-dSAIEkK8,Out of Context
+false,GET,https://www.youtube.com/watch?v=d8liHExs5tc,Out of Context
+false,GET,https://www.youtube.com/watch?v=l7WFXv5cXzA,Out of Context
+false,GET,https://www.youtube.com/watch?v=qHhceEVLZvg,Out of Context
+false,GET,https://www.youtube.com/watch?v=xczzcxL6WY0,Out of Context
+false,GET,http://ss64.com/orad/,Out of Context
+false,GET,https://www.youtube.com/watch?v=Mv7wpCIAdp4,Out of Context
+false,GET,https://www.youtube.com/watch?v=V_CsaO6RkvM,Out of Context
+false,GET,https://www.youtube.com/watch?v=fVv39I0oXHE,Out of Context
+false,GET,https://www.youtube.com/watch?v=KqoL60jtBWU,Out of Context
+false,GET,http://ha.ckers.org/xss.html,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=login.php,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/jquery.colorbox.js,
+false,GET,http://127.0.0.1:1234/icons/text.gif,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php&popUpNotificationCode=SL1,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php&popUpNotificationCode=L1H0,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=N;O=D,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php&popUpNotificationCode=SSLE1,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/ddsmoothmenu-v.css,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/Thumbs.db,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/gritter-light.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/gritter-long.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/gritter.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/ie-spacer.gif,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/trees.jpg,
+false,GET,http://schemas.xmlsoap.org/soap/envelope/,Out of Context
+false,GET,http://www.w3.org/2001/XMLSchema,Out of Context
+false,GET,http://www.w3.org/2001/XMLSchema-instance,Out of Context
+false,GET,http://schemas.xmlsoap.org/soap/encoding/,Out of Context
+false,GET,http://schemas.xmlsoap.org/wsdl/soap/,Out of Context
+false,GET,http://schemas.xmlsoap.org/wsdl/,Out of Context
+false,GET,http://www.w3.org/2001/XMLSchema-instance&amp;quot;,Out of Context
+false,GET,http://www.w3.org/2001/XMLSchema&amp;quot;,Out of Context
+false,GET,http://schemas.xmlsoap.org/soap/envelope/&amp;quot;,Out of Context
+false,GET,http://schemas.xmlsoap.org/soap/encoding/&amp;quot;&amp;gt;,Out of Context
+false,GET,http://schemas.xmlsoap.org/soap/http,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/content-security-policy.js,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=N;O=A,
+false,GET,http://docs.jquery.com/License,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/gritter/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/hints/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/inline-initializers/?C=D;O=D,
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=home.php,Out of Context
+false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=http://www.google.com,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/pop-up-help-context-generator.php%3fpagename=home.php,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=N;O=D,
+false,GET,http://jacklmoore.com/colorbox,Out of Context
+false,GET,http://jacklmoore.com/notes/click-events/,Out of Context
+false,GET,http://bugs.jquery.com/ticket/12273,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/border.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/controls.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/loading.gif,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/loading_background.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/overlay.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/ddsmoothmenu/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/styles/gritter/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/gritter/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/on-page-scripts/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/?C=D;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderBottomCenter.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderBottomLeft.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderBottomRight.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderMiddleLeft.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderMiddleRight.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderTopCenter.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderTopLeft.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/borderTopRight.png,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/images/ie6/?C=D;O=D,

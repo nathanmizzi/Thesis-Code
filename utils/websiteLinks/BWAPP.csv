@@ -1,0 +1,43 @@
+Processed,Method,URI,Flags
+true,GET,http://localhost:1234/bWAPP/bWAPP/login.php,Seed
+true,GET,http://localhost:1234/bWAPP/bWAPP/portal.php,Seed
+false,GET,http://localhost:1234/bWAPP/bWAPP/user_new.php,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/info.php,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/training.php,Out of Context
+false,GET,http://itsecgames.blogspot.com/,Out of Context
+false,GET,https://www.owasp.org/,Out of Context
+false,GET,https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project,Out of Context
+false,GET,https://www.netsparker.com/,Out of Context
+false,GET,http://www.missingkids.com/,Out of Context
+false,GET,http://www.mmebvba.com/,Out of Context
+false,GET,http://twitter.com/MME_IT,Out of Context
+false,GET,http://be.linkedin.com/in/malikmesellem,Out of Context
+false,GET,http://www.facebook.com/pages/MME-IT-Audits-Security/104153019664877,Out of Context
+false,GET,http://creativecommons.org/licenses/by-nc-nd/4.0/,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/stylesheets/stylesheet.css,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/favicon.ico,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/js/html5.js,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/owasp.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/zap.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/netsparker.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/mk.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/mme.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/netsparker.gif,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/twitter.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/linkedin.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/facebook.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/blogger.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/cc.png,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/images/bee_1.png,Out of Context
+false,GET,https://fonts.googleapis.com/css?family=Architects+Daughter,Out of Context
+false,GET,http://html5shiv.googlecode.com/svn/trunk/html5.js,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/password_change.php,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/user_extra.php,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/security_level_set.php,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/reset.php,Out of Context
+true,POST,http://localhost:1234/bWAPP/bWAPP/login.php,
+false,GET,http://localhost:1234/bWAPP/bWAPP/credits.php,Out of Context
+false,GET,http://localhost:1234/bWAPP/bWAPP/logout.php,Out of Context
+true,POST,http://localhost:1234/bWAPP/bWAPP/portal.php,
+true,POST,http://localhost:1234/bWAPP/bWAPP/portal.php,
+true,POST,http://localhost:1234/bWAPP/bWAPP/portal.php,

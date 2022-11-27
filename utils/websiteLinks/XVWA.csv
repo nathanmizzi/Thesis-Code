@@ -1,0 +1,177 @@
+Processed,Method,URI,Flags
+true,GET,http://127.0.0.1:1234/xvwa,Seed
+true,GET,http://127.0.0.1:1234/xvwa/,Seed
+true,GET,http://127.0.0.1:1234/xvwa/css,Seed
+true,GET,http://127.0.0.1:1234/xvwa/css/,Seed
+true,GET,http://127.0.0.1:1234/xvwa/instruction.php,
+true,GET,http://127.0.0.1:1234/xvwa/setup/,
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=D;O=D,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli_blind/,
+true,GET,http://127.0.0.1:1234/xvwa/css/bootstrap.css,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/cmdi/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/xpath/,
+true,GET,http://127.0.0.1:1234/xvwa/css/bootstrap.min.css,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/formula_injection/,
+true,GET,http://127.0.0.1:1234/xvwa/css/bootstrap.min.css.bak,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/php_object_injection/,
+true,GET,http://127.0.0.1:1234/xvwa/css/shop-item.css,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/fileupload/,
+true,GET,http://127.0.0.1:1234/xvwa/img,Seed
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/reflected_xss/,
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/img/,Seed
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/stored_xss/,
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=D;O=D,Seed
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/dom_xss/,
+false,GET,http://127.0.0.1:1234/icons/blank.gif,Out of Context
+false,GET,http://127.0.0.1:1234/icons/back.gif,Out of Context
+false,GET,http://127.0.0.1:1234/icons/text.gif,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/1514208365img1.jpg,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssrf_xspa/,
+true,GET,http://127.0.0.1:1234/xvwa/img/502365950img1.jpg,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/fi/,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sessionflaws/,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/idor/,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=D;O=D,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/missfunc/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/csrf/,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/1,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/crypto/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/redirect/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssti/,
+false,GET,http://www.gnu.org/licenses/gpl-3.0.txt,Out of Context
+false,GET,https://twitter.com/s4n7h0,Out of Context
+false,GET,https://twitter.com/samanl33t,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/xvwa-logo-1.png,
+true,GET,http://127.0.0.1:1234/xvwa/js,Seed
+false,GET,https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js,Out of Context
+false,GET,https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/js/jquery.js,
+true,GET,http://127.0.0.1:1234/xvwa/js/bootstrap.min.js,
+false,GET,http://placehold.it/800x300,Out of Context
+true,POST,http://127.0.0.1:1234/xvwa/login.php,
+true,GET,http://127.0.0.1:1234/xvwa/js/,Seed
+true,GET,http://127.0.0.1:1234/xvwa/img/xvwa-logo.png,
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=S;O=D,Seed
+true,GET,http://127.0.0.1:1234/xvwa/js/bootstrap.js,Seed
+true,GET,http://127.0.0.1:1234/xvwa/login.php,Seed
+true,GET,http://127.0.0.1:1234/xvwa/setup,Seed
+true,GET,http://127.0.0.1:1234/xvwa/setup/?action=do,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/,Seed
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/cmdi,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/cmdi/?target=ZAP,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/crypto,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/crypto/?item=ZAP,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/csrf,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/csrf/?confirm=ZAP&passwd=ZAP&submit=submit,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/dom_xss,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/dom_xss/?search=ZAP,Seed
+false,GET,https://www.owasp.org/index.php/SQL_Injection,Out of Context
+false,GET,http://getbootstrap.com/,Out of Context
+false,GET,https://github.com/twbs/bootstrap/blob/master/LICENSE,Out of Context
+false,GET,https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/fi,Seed
+true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/fi/?file=readme.txt,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/fileupload,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/formula_injection,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/formula_injection/export.php,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/idor,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/idor/?item=1,Seed
+false,GET,https://www.owasp.org/index.php/Command_Injection,Out of Context
+false,GET,https://www.owasp.org/index.php/Blind_SQL_Injection,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/missfunc,Seed
+true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli_blind/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/missfunc/?action=view&item=1,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/php_object_injection,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/php_object_injection/?r=a:2:%7Bi:0;s:4:%22XVWA%22;i:1;s:33:%22Xtreme%20Vulnerable%20Web%20Application%22;%7D,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/redirect,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/redirect/redirect.php?forward=https://www.owasp.org,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/reflected_xss,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/reflected_xss/?item=ZAP,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sessionflaws,Seed
+false,GET,https://www.owasp.org/index.php/XPATH_Injection,Out of Context
+true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/xpath/,
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli_blind,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssrf_xspa,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssti,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssti/?name=ZAP,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/stored_xss,Seed
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/xpath,Seed
+false,GET,http://startbootstrap.com/,Out of Context
+false,GET,http://www.apache.org/licenses/LICENSE-2.0.,Out of Context
+false,GET,https://www.owasp.org/index.php/CSV_Excel_Macro_Injection,Out of Context
+true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/formula_injection/export.php,
+false,GET,https://www.owasp.org/index.php/PHP_Object_In%0D%0Ajection,Out of Context
+false,GET,https://www.owasp.org/index.php/Unrestricted_File_Upload,Out of Context
+true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/fileupload/,
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA0987.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA1672.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA3671.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA3876.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA4276.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA4589.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA5642.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA7569.png,
+false,GET,https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA7619.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/XVWA9680.png,
+true,GET,http://127.0.0.1:1234/xvwa/img/license.png,
+false,GET,http://127.0.0.1:1234/icons/image2.gif,Out of Context
+false,GET,http://127.0.0.1:1234/icons/folder.gif,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=N;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/css/?C=S;O=D,
+false,GET,https://www.owasp.org/index.php/Cross-site_Scripting_(XSS),Out of Context
+true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/stored_xss/,
+false,GET,http://127.0.0.1:1234/,Out of Context
+false,GET,https://www.owasp.org/index.php/DOM_Based_XSS,Out of Context
+false,GET,https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit,Out of Context
+true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/ssrf_xspa/,
+false,GET,https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion,Out of Context
+false,GET,https://www.owasp.org/index.php/Testing_for_Remote_File_Inclusion,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=N;O=D,
+false,GET,https://www.owasp.org/index.php/Session_Management_Cheat_Sheet,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=D;O=A,
+false,GET,http://127.0.0.1:1234/icons/unknown.gif,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=N;O=A,
+false,GET,https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_References_(OTG-AUTHZ-004),Out of Context
+false,GET,https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF),Out of Context
+false,GET,https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control,Out of Context
+false,GET,https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/redirect/redirect.php?forward=http://www.webappsec.org/,
+false,GET,https://www.owasp.org/index.php/Guide_to_Cryptography,Out of Context
+false,GET,http://blog.portswigger.net/2015/08/server-side-template-injection.html,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=N;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=M;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=S;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=D;O=A,
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=N;O=A,
+false,GET,http://getbootstrap.com/javascript/,Out of Context
+false,GET,http://www.modernizr.com/,Out of Context
+false,GET,http://blog.alexmaccaw.com/css-transitions,Out of Context
+false,GET,https://github.com/twbs/bootstrap/issues/14093,Out of Context
+false,GET,https://www.owasp.org/,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/img/?C=S;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/img/1823425237img1.jpg,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/img/uploads/?C=S;O=D,
+false,GET,http://www.webappsec.org/,Out of Context
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=M;O=D,
+true,GET,http://127.0.0.1:1234/xvwa/js/?C=D;O=D,
