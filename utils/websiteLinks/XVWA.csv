@@ -99,8 +99,6 @@ true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/reflected_xss/?item=ZAP,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sessionflaws,Seed
 false,GET,https://www.owasp.org/index.php/XPATH_Injection,Out of Context
 true,POST,http://127.0.0.1:1234/xvwa/vulnerabilities/xpath/,
-true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli,Seed
-true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli_blind,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssrf_xspa,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssti,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/ssti/?name=ZAP,Seed

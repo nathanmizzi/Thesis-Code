@@ -105,4 +105,15 @@
     <MESSAGE value="Implemented Basic Error Based SQL Injection scan on the DVWA website (Hard coded login page value), links are taken from spider csv results." />
     <option name="LAST_COMMIT_MESSAGE" value="Implemented Basic Error Based SQL Injection scan on the DVWA website (Hard coded login page value), links are taken from spider csv results." />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>337</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>

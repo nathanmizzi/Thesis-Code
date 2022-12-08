@@ -2,10 +2,11 @@
 
 import aspose.words as aw  # Used to create word document containing report
 from datetime import datetime
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs, MarkupResemblesLocatorWarning
 from urllib.parse import urljoin
 import requests
 import pandas as pd
+import warnings
 
 # Variable Declarations
 total_seconds = 0
@@ -13,23 +14,25 @@ successful_hit_type = []
 hit_type = []
 
 # Contains all the Base URL's of the webpages to test on
+
+# It is important that the names of the sites below match the respective csv files name perfectly.
 # list_of_source_csvs = ["BWAPP", "DVWA", "Mutillidae", "Orange_HRM", "Webgoat", "XVWA"]
-list_of_source_csvs = ["DVWA", "XVWA"]
+list_of_source_csvs = ["Orange_HRM"]
 
 urls_to_test = {}
 vulnerable_urls = []
+tested_urls = []
 
 directoryListPath = "utils/directoryLists/dirbuster_200.txt"
 passwordListPath = "utils/passwordLists/passlist.txt"
 subdomainListPath = "utils/subdomainLists/subdomains.txt"
 usernameListPath = "utils/usernameLists/usernames_small.txt"
 
-
 # Utilities
 
 def request(url):
     try:
-        return requests.get(url)
+        return requests.get(url.trim())
     except requests.exceptions.ConnectionError:
         pass
     except requests.exceptions.InvalidURL:
@@ -113,7 +116,7 @@ def readCsv():
 
         for index, row in df.iterrows():
             try:
-                if df.iloc[index]["Processed"] == True:
+                if df.iloc[index]["Processed"] == True and df.iloc[index]["Method"] == "GET":
                     # print(df.iloc[index]["URI"])
                     websites_urls.append(df.iloc[index]["URI"])
             except Exception as e:
@@ -159,7 +162,11 @@ def websiteBruteForce(page_url):
 # SQL Injection
 
 def get_all_forms(url):
-    soup = bs(s.get(url).content, "html.parser")
+
+    response = s.get(url)
+    response_content = response.content
+
+    soup = bs(response_content.decode('utf-8','ignore'), "html.parser")
 
     return soup.find_all("form")
 
@@ -195,51 +202,67 @@ def isInjectable(response):
         "you have an error in your sql syntax;",
         "warning: mysql",
         "unclosed quotation mark after the character string",
-        "quoted string not properly terminated"
+        "quoted string not properly terminated",
+        "Uncaught mysqli_sql_exception"
     }
 
     for error in errors:
-        if error in response.content.decode().lower():
-            return True
+            if error in response.content.decode(errors='ignore').lower():
+                return True
 
     return False
 
 
 def sqlInjectionScan(url):
-    forms = get_all_forms(url)
 
-    if len(forms) >= 1:
-        print(f"[+] Detected {len(forms)} forms on {url}.")
+    if url not in tested_urls:
 
-    for form in forms:
-        form_details = get_form_details(form)
-        for c in "\"'":
+        forms = get_all_forms(url)
 
-            data = {}
-            for input_tag in form_details["inputs"]:
-                if input_tag["type"] == "hidden" or input_tag["value"]:
+        if len(forms) >= 1:
+            print(f"[+] Detected {len(forms)} forms on {url}.")
 
-                    try:
-                        data[input_tag["name"]] = input_tag["value"] + c
-                    except:
-                        pass
-                elif input_tag["type"] != "submit":
-                    data[input_tag["name"]] = f"test{c}"
+        for form in forms:
+            form_details = get_form_details(form)
 
-            url = urljoin(url, form_details["action"])
-            if form_details["method"] == "post":
-                s.cookies.clear()
-                res = s.post(url, data=data)
-            elif form_details["method"] == "get":
-                s.cookies.clear()
-                res = s.get(url, params=data)
+            try:
+                if "xvwa" in url and form_details["inputs"][0]["name"] == "username": # Adding condition to skip login form for XVWA as it was causing issues
+                    continue
+            except:
+                continue
 
-            if isInjectable(res):
-                print("[+] SQL Injection vulnerability detected, link:", url)
-                print("[+] Form:")
-                print(form_details)
-                return True
+            for c in "\"'":
 
+                data = {}
+                for input_tag in form_details["inputs"]:
+                    if input_tag["type"] == "hidden" or input_tag["value"]:
+                        try:
+                            data[input_tag["name"]] = input_tag["value"] + c
+                        except:
+                            pass
+                    elif input_tag["type"] != "submit":
+                        # data[input_tag["name"]] = f"test{c}" # Old Code that only worked on dvwa
+                        # TODO: Collect a dataset of SQL errors and iterate through a list of errors until one provides the required result, if none do, mark attempt as failed.
+                          data[input_tag["name"]] = f"<1'1 or 1>" # New code that aims to catch more errors on a multitude of websites
+
+                url = urljoin(url, form_details["action"])
+                if form_details["method"] == "post":
+                    s.cookies.clear()
+                    res = s.post(url, data=data)
+                elif form_details["method"] == "get":
+                    s.cookies.clear()
+                    res = s.get(url, params=data)
+
+                if isInjectable(res):
+                    print("[+] SQL Injection vulnerability detected, link:", url)
+                    print("[+] Form:")
+                    print(form_details)
+
+                    tested_urls.append(url)
+
+                    return True
+
+    tested_urls.append(url)
     return False
 
 # Website authenticators
@@ -262,11 +285,13 @@ def DVWA_test(urls):
 
         response = s.post('http://127.0.0.1/login.php', data_dict)
 
+        # Then test other urls
+
         for url in urls["DVWA"]:
 
             if sqlInjectionScan(url):
 
-                vulnerable_urls.append(url)
+                vulnerable_urls.append("DVWA: " + url)
 
                 if "SQL Injection" not in successful_hit_type:
                     successful_hit_type.append("SQL Injection")
@@ -282,7 +307,8 @@ def XVWA_test(urls):
 
             if sqlInjectionScan(url):
 
-                vulnerable_urls.append(url)
+                if url not in vulnerable_urls:
+                    vulnerable_urls.append("XVWA: " + url)
 
                 if "SQL Injection" not in successful_hit_type:
                     successful_hit_type.append("SQL Injection")
@@ -291,7 +317,45 @@ def XVWA_test(urls):
         print("\nXVWA Error: \n")
         print(e)
 
+def OrangeHRM_test(urls):
+    try:
+
+        # Firstly, create a logged-in session in order to create requests
+
+        s.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
+            'Cookie': 'security=low; PHPSESSID=geo7gb3ehf5gfnbhrvuqu545i7'
+        }
+
+        resp = s.get('http://localhost:1234/OrangeHRM/symfony/web/index.php/auth/login')
+        parsed_html = bs(resp.content, features="html.parser")
+        data_dict = {"txtUsername": 'admin', "txtPassword": 'Mcast1234!', "Submit": "LOGIN"}
+
+        response = s.post("http://localhost:1234/OrangeHRM/symfony/web/index.php/auth/validateCredentials", data_dict)
+
+        responseContent = response.content.decode()
+
+        print("Breakpoint!");
+
+        # Then test other urls
+
+        for url in urls["Orange_HRM"]:
+
+            if sqlInjectionScan(url):
+
+                if url not in vulnerable_urls:
+                    vulnerable_urls.append("Orange_HRM: " + url)
+
+                if "SQL Injection" not in successful_hit_type:
+                    successful_hit_type.append("SQL Injection")
+
+    except Exception as e:
+        print("\nOrange_HRM Error: \n")
+        print(e)
+
 if __name__ == '__main__':
+
+    warnings.filterwarnings(action="ignore", category=MarkupResemblesLocatorWarning)
 
     # Populate array of urls from csv files
     readCsv()
@@ -302,6 +366,8 @@ if __name__ == '__main__':
         DVWA_test(urls_to_test)
 
         XVWA_test(urls_to_test)
+
+        OrangeHRM_test(urls_to_test)
 
 
     # Urls have been tested, now output the results to the user.
