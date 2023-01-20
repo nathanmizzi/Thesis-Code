@@ -1,6 +1,4 @@
 Processed,Method,URI,Flags
-true,GET,http://localhost:1234/OrangeHRM,Seed
-true,GET,http://localhost:1234/OrangeHRM/,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/?C=S;O=D,Seed
@@ -9,7 +7,6 @@ true,GET,http://localhost:1234/OrangeHRM/symfony/apps/,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/?C=S;O=D,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/,Seed
-true,GET,http://localhost:1234/OrangeHRM/symfony/web/index.php/auth/login,
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/?C=S;O=D,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/config,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/config/,Seed
@@ -238,7 +235,6 @@ true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/act
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/actions/?C=D;O=A,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/actions/indexAction.class.php,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/actions/loginAction.class.php,Seed
-true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/actions/logoutAction.class.php,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/actions/retryLoginAction.class.php,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/actions/unauthorizedAction.class.php,Seed
 true,GET,http://localhost:1234/OrangeHRM/symfony/apps/orangehrm/modules/auth/actions/validateCredentialsAction.class.php,Seed
@@ -900,7 +896,6 @@ true,GET,http://localhost:1234/OrangeHRM/symfony/data/sql/?C=D;O=A,
 true,GET,http://localhost:1234/OrangeHRM/symfony/log/?C=N;O=A,
 false,GET,http://localhost:1234/,Out of Context
 true,GET,http://localhost:1234/OrangeHRM/symfony/web/index.php/admin/changeUserPassword,
-true,GET,http://localhost:1234/OrangeHRM/symfony/web/index.php/auth/logout,
 true,GET,http://localhost:1234/OrangeHRM/symfony/web/index.php/admin/viewJobTitleList,
 true,GET,http://localhost:1234/OrangeHRM/symfony/web/index.php/admin/viewPayGrades,
 true,GET,http://localhost:1234/OrangeHRM/symfony/web/index.php/admin/employmentStatus,

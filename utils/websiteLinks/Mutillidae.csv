@@ -25,7 +25,6 @@ true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&p
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox,Seed
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/colorbox.css,Seed
-true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=/opt/lampp/htdocs/mutillidae/mutillidae/home.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/colorbox/jquery.colorbox-min.js,Seed
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/set-up-database.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/jquery.js,Seed
@@ -59,6 +58,7 @@ false,GET,http://127.0.0.1:1234/,Out of Context
 false,GET,http://127.0.0.1:1234/icons/blank.gif,Out of Context
 false,GET,http://127.0.0.1:1234/icons/back.gif,Out of Context
 false,GET,http://127.0.0.1:1234/icons/folder.gif,Out of Context
+true,GET,http://127.0.0.1:1234/mutillidae/index.php?page=user-info.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=content-security-policy.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php&page=document-viewer.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=capture-data.php,
@@ -90,7 +90,6 @@ true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=client-side-
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=cache-control.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=framing.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/framer.html,
-true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=ssl-misconfiguration.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/ddsmoothmenu/,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=credits.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?page=client-side-control-challenge.php,
@@ -214,12 +213,10 @@ true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/images/ldap-server-48-59.pn
 false,POST,https://www.paypal.com/cgi-bin/webscr,Out of Context
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=home.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=home.php,
-true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=home.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/pop-up-help-context-generator.php?pagename=home.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=login.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=login.php,
-true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=login.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/pop-up-help-context-generator.php?pagename=login.php,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=54,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/hints-page-wrapper.php?level1HintIncludeFile=48,
@@ -535,7 +532,6 @@ false,GET,http://localhost/mutillidae/passwords/accounts.txt,Out of Context
 false,GET,http://localhost/xampp,Out of Context
 false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=home.php,Out of Context
 false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=home.php,Out of Context
-false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=home.php,Out of Context
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/includes/images/bullet_black.png,
 false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-hints&page=login.php,Out of Context
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=N;O=D,
@@ -543,7 +539,6 @@ true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=M;O=A,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=S;O=A,
 true,GET,http://127.0.0.1:1234/mutillidae/mutillidae/javascript/jQuery/?C=D;O=A,
 false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-security&page=login.php,Out of Context
-false,GET,https://127.0.0.1:1234/mutillidae/mutillidae/index.php?do=toggle-enforce-ssl&page=login.php,Out of Context
 false,GET,https://www.youtube.com/watch?v=YoNlia7B5F0,Out of Context
 false,GET,https://www.youtube.com/watch?v=yN6hjtNvhMo,Out of Context
 false,GET,https://www.youtube.com/watch?v=i0nOTA2NNDY,Out of Context

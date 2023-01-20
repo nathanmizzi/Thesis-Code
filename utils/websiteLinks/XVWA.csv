@@ -4,7 +4,6 @@ true,GET,http://127.0.0.1:1234/xvwa/,Seed
 true,GET,http://127.0.0.1:1234/xvwa/css,Seed
 true,GET,http://127.0.0.1:1234/xvwa/css/,Seed
 true,GET,http://127.0.0.1:1234/xvwa/instruction.php,
-true,GET,http://127.0.0.1:1234/xvwa/setup/,
 true,GET,http://127.0.0.1:1234/xvwa/css/?C=D;O=D,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli/,
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/sqli_blind/,
@@ -61,8 +60,6 @@ true,GET,http://127.0.0.1:1234/xvwa/img/xvwa-logo.png,
 true,GET,http://127.0.0.1:1234/xvwa/js/?C=S;O=D,Seed
 true,GET,http://127.0.0.1:1234/xvwa/js/bootstrap.js,Seed
 true,GET,http://127.0.0.1:1234/xvwa/login.php,Seed
-true,GET,http://127.0.0.1:1234/xvwa/setup,Seed
-true,GET,http://127.0.0.1:1234/xvwa/setup/?action=do,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities,Seed
 true,GET,http://127.0.0.1:1234/xvwa/vulnerabilities/,Seed
 true,GET,http://127.0.0.1:1234/xvwa/css/?C=N;O=A,

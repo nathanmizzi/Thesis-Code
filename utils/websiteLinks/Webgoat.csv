@@ -8,6 +8,16 @@ true,GET,http://localhost:8080/WebGoat/css/img,Seed
 true,GET,http://localhost:8080/WebGoat/css/main.css,Seed
 true,GET,http://localhost:8080/WebGoat/js,Seed
 true,GET,http://localhost:8080/WebGoat/js/libs,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/1,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/2,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/3,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/4,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/5,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/6,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/7,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/8,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/9,Seed
+true,GET,http://localhost:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/10,Seed
 true,GET,http://localhost:8080/WebGoat/js/libs/require.min.js,Seed
 true,GET,http://localhost:8080/WebGoat/js/modernizr.min.js,Seed
 true,GET,http://localhost:8080/WebGoat/js/search.js,Seed
