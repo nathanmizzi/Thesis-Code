@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Successfully performs Tests on DVWA and XVWA + added several if conditions to avoid scanning the same link more than once + Succesfully removed annoying parsing error messages + Began work on penetrating OrangeHRM">
+    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/Mutillidae.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/Mutillidae.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/Orange_HRM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/Orange_HRM.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/Webgoat.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/Webgoat.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/XVWA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/XVWA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/.~lock.report_17-05-2022_23:57:09.docx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/.~lock.report_23-05-2022_10:07:40.docx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_19-05-2022_00:45:24.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20-01-2023_00:22:54.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20-01-2023_01:30:59.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_21-05-2022_19:59:50.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_23-05-2022_09:59:11.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_23-05-2022_10:07:40.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_23-05-2022_10:14:03.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670533472862</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)">
+      <created>1674179114083</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674179114083</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +126,7 @@
     <MESSAGE value="Final commit with old web crawler functionality, new commits from onward will involve a read from csv file feature." />
     <MESSAGE value="Implemented Basic Error Based SQL Injection scan on the DVWA website (Hard coded login page value), links are taken from spider csv results." />
     <MESSAGE value="Successfully performs Tests on DVWA and XVWA + added several if conditions to avoid scanning the same link more than once + Succesfully removed annoying parsing error messages + Began work on penetrating OrangeHRM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successfully performs Tests on DVWA and XVWA + added several if conditions to avoid scanning the same link more than once + Succesfully removed annoying parsing error messages + Began work on penetrating OrangeHRM" />
+    <MESSAGE value="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)" />
   </component>
 </project>

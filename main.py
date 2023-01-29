@@ -1,5 +1,6 @@
 # Imports
 import math
+import random
 from datetime import datetime
 from bs4 import BeautifulSoup as bs, MarkupResemblesLocatorWarning, XMLParsedAsHTMLWarning
 from urllib.parse import urljoin
@@ -12,11 +13,11 @@ from docx import Document
 from docx.shared import Inches
 
 # Metrics for pdf generation:
-total_seconds = 0
+total_seconds = {}
 successful_hit_type = {}
-hit_type = []
+hit_type = {}
 sqliStringsPerWebsite = {}
-sqliStringsAttemptedInTotal = 0
+sqliStringsAttemptedInTotal = {}
 
 safeWebPagesInSite = {}
 vulnerableWebPagesInSite = {}
@@ -50,17 +51,14 @@ def request(url):
     except requests.exceptions.InvalidURL:
         print("Failed To Check URL: " + url)
 
-
 def getCurrentDateTime():
     currentDate = datetime.now()
     return currentDate
-
 
 def differenceInSeconds(stardDate, endDate):
     difference = (endDate - stardDate)
 
     return difference.total_seconds()
-
 
 def generateReports():
 
@@ -68,7 +66,7 @@ def generateReports():
 
     report = Document()
 
-    h1 = report.add_heading("\nPenetration Testing Report:", 0)
+    h1 = report.add_heading("Penetration Testing Report:", 0)
     h1.bold = True
 
     for website in list_of_source_csvs:
@@ -78,15 +76,17 @@ def generateReports():
 
         report.add_paragraph(f"\nDate and Time of Report: {datetime.now().strftime('%d-%m-%Y, %H:%M:%S')}")
 
-        report.add_paragraph(f"\nTotal Number Of Injection attacks attempted: {len(hit_type)}")
+        report.add_paragraph(f"\nTotal Number Of Injection attacks attempted: {len(hit_type[website])}")
 
-        if len(hit_type) > 0:
-            report.add_paragraph(f"\nAll Types of attacks attempted: {hit_type}")
+        if len(hit_type[website]) > 0:
+            report.add_paragraph(f"\nAll Types of attacks attempted: {hit_type[website]}")
 
         report.add_paragraph(f"\nNumber of Successful attacks: {len(successful_hit_type[website])}")
 
         if len(successful_hit_type[website]) > 0:
             report.add_paragraph(f"\nTypes of Successful attacks: {successful_hit_type[website]}")
+
+            report.add_paragraph(f"\nSQLI Strings Attempted in Total: {sqliStringsAttemptedInTotal[website]}")
 
             sqliParagraphString = f"\nSQLI Strings Used: "
 
@@ -98,7 +98,7 @@ def generateReports():
 
             report.add_paragraph(sqliParagraphString)
 
-        report.add_paragraph(f"\nTime taken to finish all attacks: {str(math.ceil(total_seconds))} Seconds\n")
+        report.add_paragraph(f"\nTime taken to finish all attacks: {str(math.ceil(total_seconds[website]))} Seconds")
 
         report.add_paragraph(f"\nVulnerability Statistics: ")
         # Creating a Pie Chart of vulnerable and safe code.
@@ -106,22 +106,70 @@ def generateReports():
         id_of_img = uid.uuid1().__str__()
         fig = plt.figure(figsize= (3, 2))
         plt.pie([len(vulnerableWebPagesInSite[website]), len(safeWebPagesInSite[website])], labels=lbls,
-                autopct='%1.1f%%', shadow=True, startangle=90)
+                autopct='%1.1f%%', pctdistance=0.85, shadow=True, startangle=90)
+
+        donut = plt.Circle((0,0), 0.70, fc='white')
+        fig = plt.gcf()
+
+        fig.gca().add_artist(donut)
+        plt.title("URL Vulnerability Distribution")
 
         plt.savefig('utils/graphs/' + id_of_img + ".png")
-        report.add_picture('utils/graphs/' + id_of_img + ".png", width=Inches(3), height=Inches(2))
+        report.add_picture('utils/graphs/' + id_of_img + ".png", width=Inches(4), height=Inches(3))
 
         report.add_paragraph(f"\nRecommendations: ")
 
+        sqliAdded = False
         for string in successful_hit_type[website]:
-            if "SQL Injection" in string:
+            if "SQL Injection" in string and sqliAdded is False:
                 recommendedPar = report.add_paragraph("SQL Injection: https://owasp.org/www-community/attacks/SQL_Injection")
                 recommendedParFormat = recommendedPar.paragraph_format
                 recommendedParFormat.left_indent = Inches(0.5)
+                sqliAdded = True
 
         report.add_page_break()
 
         report.save(f"reports/report_{dateTimeToday}.docx")
+
+# This function simulates a penetration test on a website, and allows the reports to be generated without scrapes
+def populateTestData(websiteName):
+
+    # Random Values to choose from
+    typesOfAttacksDummyData = ["Error Based SQL Injection"]
+    sqliStringsDummyData = ["=<1 or '1'>", "1 or 1'", 'select * from users where id  =  1 or 1#""?  =  1 or 1  =  1 -- 1",1,,']
+    total_secondsDummyData = [50, 110, 27, 43]
+    vulnerableWebPagesInSiteDummyData = ["http://" + websiteName + "/login.php", "http://" + websiteName + "/sqli.php", "http://" + websiteName + "/bruteForce.php"]
+
+    # Instantiating The Necessary Variables
+    total_seconds[websiteName] = 0
+    successful_hit_type[websiteName] = []
+    vulnerableWebPagesInSite[websiteName] = []
+    safeWebPagesInSite[websiteName] = []
+    sqliStringsPerWebsite[websiteName] = []
+
+    # Populating the variables as a normal scrape would
+    hit_type[websiteName].append(typesOfAttacksDummyData[0])
+    successful_hit_type[websiteName].append(typesOfAttacksDummyData[0])
+
+    for i in range(len(sqliStringsDummyData) - 1):
+        valueSelected = random.randint(0, len(sqliStringsDummyData) - 1)
+        sqliStringsPerWebsite[websiteName].append(sqliStringsDummyData[valueSelected])
+
+    for i in range(len(total_secondsDummyData) - 1):
+        valueSelected = random.randint(0, len(total_secondsDummyData) - 1)
+        total_seconds[websiteName] = total_secondsDummyData[valueSelected]
+
+    for i in range(len(vulnerableWebPagesInSiteDummyData) - 1):
+        valueSelected = random.randint(0, len(vulnerableWebPagesInSiteDummyData) - 1)
+        vulnerable_urls.append(vulnerableWebPagesInSiteDummyData[valueSelected])
+        vulnerableWebPagesInSite[websiteName].append(vulnerableWebPagesInSiteDummyData[valueSelected])
+
+    ratioOfSafeSites = total_secondsDummyData[random.randint(0, len(total_secondsDummyData) - 1)]
+
+    for i in range(ratioOfSafeSites):
+        safeWebPagesInSite[websiteName].append("http://" + websiteName + "/safeSite.php")
+
+    sqliStringsAttemptedInTotal[websiteName] = len(sqliStringsPerWebsite[websiteName])
 
 def readWebsiteLinksCsv():
 
@@ -249,7 +297,12 @@ def isInjectable(response):
 
 def sqlInjectionScan(url, cookies, nameOfWebsite):
 
+    sqliStringsAttemptedInTotal[nameOfWebsite] = 0
+
     for sqliString in sqliStrings:
+
+        sqliStringsAttemptedInTotal[nameOfWebsite] += 1
+
         if url not in tested_urls:
 
             forms = get_all_forms(url, cookies)
@@ -303,13 +356,12 @@ def sqlInjectionScan(url, cookies, nameOfWebsite):
 # Website authenticators
 
 def DVWA_sqli(urls):
+
     try:
-
         successful_hit_type["DVWA"] = []
-
         vulnerableWebPagesInSite["DVWA"] = []
         safeWebPagesInSite["DVWA"] = []
-        hit_type.append("Error Based SQL Injection")
+        hit_type["DVWA"].append("Error Based SQL Injection")
 
         # Firstly, create a logged-in session in order to create requests
 
@@ -337,11 +389,10 @@ def DVWA_sqli(urls):
 
                 vulnerable_urls.append("DVWA: " + url)
 
-                if "SQL Injection" not in successful_hit_type["DVWA"]:
+                if "Error Based SQL Injection" not in successful_hit_type["DVWA"]:
                     successful_hit_type["DVWA"].append("Error Based SQL Injection")
             else:
                 safeWebPagesInSite["DVWA"].append(url)
-
     except Exception as e:
         print("\nDVWA Error: \n")
         print(e)
@@ -349,12 +400,10 @@ def DVWA_sqli(urls):
 def XVWA_sqli(urls):
 
     try:
-
         successful_hit_type["XVWA"] = []
-
         vulnerableWebPagesInSite["XVWA"] = []
         safeWebPagesInSite["XVWA"] = []
-        hit_type.append("Error Based SQL Injection")
+        hit_type["XVWA"].append("Error Based SQL Injection")
 
         for url in urls["XVWA"]:
 
@@ -364,7 +413,7 @@ def XVWA_sqli(urls):
                 if url not in vulnerable_urls:
                     vulnerable_urls.append("XVWA: " + url)
 
-                if "SQL Injection" not in successful_hit_type["XVWA"]:
+                if "Error Based SQL Injection" not in successful_hit_type["XVWA"]:
                     successful_hit_type["XVWA"].append("Error Based SQL Injection")
 
             else:
@@ -467,48 +516,74 @@ if __name__ == '__main__':
     warnings.filterwarnings(action="ignore", category=MarkupResemblesLocatorWarning)
     warnings.filterwarnings(action="ignore", category=XMLParsedAsHTMLWarning)
 
-    # Get the current time before all tests start
-    timeStarted = getCurrentDateTime()
-
     # Populate array of urls from csv files
     readWebsiteLinksCsv()
 
     # Populate array of SQL Injection strings from Kaggle Dataset
     readSQLICsv()
 
-    # Test urls accordingly
-    with requests.Session() as s:
-        sqliStringsPerWebsite["DVWA"] = []
-        DVWA_sqli(urls_to_test)
+    hit_type["DVWA"] = []
+    hit_type["XVWA"] = []
+    hit_type["Orange_HRM"] = []
+    hit_type["Mutillidae"] = []
+    hit_type["WebGoat"] = []
 
-    with requests.Session() as s:
-        sqliStringsPerWebsite["XVWA"] = []
-        XVWA_sqli(urls_to_test)
+    testMode = True
 
-    with requests.Session() as s:
-        sqliStringsPerWebsite["Orange_HRM"] = []
-        OrangeHRM_test(urls_to_test)
+    if not testMode:
 
-    with requests.Session() as s:
-        sqliStringsPerWebsite["Mutillidae"] = []
-        Mutillidae_test(urls_to_test)
+        total_seconds["DVWA"] = 0
+        timeStarted = getCurrentDateTime()
+        # Test urls accordingly
+        with requests.Session() as s:
+            sqliStringsPerWebsite["DVWA"] = []
+            DVWA_sqli(urls_to_test)
+        # Get the current time when all tests end
+        timeEnded = getCurrentDateTime()
+        total_seconds["DVWA"] += differenceInSeconds(timeStarted, timeEnded)
 
-    with requests.Session() as s:
-        sqliStringsPerWebsite["WebGoat"] = []
-        WebGoat_test(urls_to_test)
+        total_seconds["XVWA"] = 0
+        timeStarted = getCurrentDateTime()
+        with requests.Session() as s:
+            sqliStringsPerWebsite["XVWA"] = []
+            XVWA_sqli(urls_to_test)
+        # Get the current time when all tests end
+        timeEnded = getCurrentDateTime()
+        total_seconds["XVWA"] += differenceInSeconds(timeStarted, timeEnded)
 
-    # Get the current time when all tests end
-    timeEnded = getCurrentDateTime()
+        total_seconds["Orange_HRM"] = 0
+        timeStarted = getCurrentDateTime()
+        with requests.Session() as s:
+            sqliStringsPerWebsite["Orange_HRM"] = []
+            OrangeHRM_test(urls_to_test)
+        timeEnded = getCurrentDateTime()
+        total_seconds["Orange_HRM"] += differenceInSeconds(timeStarted, timeEnded)
 
-    # Calculate the difference in seconds between the start and the end times
-    total_seconds += differenceInSeconds(timeStarted, timeEnded)
+        total_seconds["Mutillidae"] = 0
+        timeStarted = getCurrentDateTime()
+        with requests.Session() as s:
+            sqliStringsPerWebsite["Mutillidae"] = []
+            Mutillidae_test(urls_to_test)
+        timeEnded = getCurrentDateTime()
+        total_seconds["Mutillidae"] += differenceInSeconds(timeStarted, timeEnded)
+
+        total_seconds["WebGoat"] = 0
+        timeStarted = getCurrentDateTime()
+        with requests.Session() as s:
+            sqliStringsPerWebsite["WebGoat"] = []
+            WebGoat_test(urls_to_test)
+        timeEnded = getCurrentDateTime()
+        total_seconds["WebGoat"] += differenceInSeconds(timeStarted, timeEnded)
+    else:
+        populateTestData("DVWA")
+        populateTestData("XVWA")
 
     # Generate Reports
     generateReports()
 
     # Urls have been tested, now output the results to the user.
     print("\nVulnerabilities were found with: " + str(len(vulnerable_urls)) + " urls.")
-    print("Total Time Taken To Perform Tests: " + str(math.ceil(total_seconds)) + " Seconds")
+    # print("Total Time Taken To Perform Tests: " + str(math.ceil(total_seconds)) + " Seconds")
 
     for url in vulnerable_urls:
         print("Vulnerable URL in " + url)
