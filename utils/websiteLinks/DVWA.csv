@@ -56,7 +56,7 @@ TRUE,GET,http://127.0.0.1/vulnerabilities/javascript/,
 TRUE,GET,http://127.0.0.1/security.php,
 TRUE,GET,http://127.0.0.1/phpinfo.php,
 TRUE,GET,http://127.0.0.1/about.php,
-TRUE,GET,http://127.0.0.1/logout.php,
+FALSE,GET,http://127.0.0.1/logout.php,
 FALSE,GET,https://www.virtualbox.org/,Out
 FALSE,GET,https://www.vmware.com/,Out
 FALSE,GET,https://www.apachefriends.org/en/xampp.html,Out
@@ -182,7 +182,7 @@ TRUE,POST,http://127.0.0.1/vulnerabilities/xss_s/,
 TRUE,POST,http://127.0.0.1/vulnerabilities/csp/,
 TRUE,POST,http://127.0.0.1/vulnerabilities/xss_s/,
 FALSE,GET,https://github.com/PHPIDS/PHPIDS,Out
-TRUE,GET,http://127.0.0.1/security.php?phpids=on,
+FALSE,GET,http://127.0.0.1/security.php?phpids=on,
 TRUE,GET,http://127.0.0.1/security.php?test=%2522%3E%3Cscript%3Eeval(window.name)%3C/script%3E,
 TRUE,GET,http://127.0.0.1/ids_log.php,
 TRUE,POST,http://127.0.0.1/security.php,

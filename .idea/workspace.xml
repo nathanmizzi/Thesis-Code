@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)">
+    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/.~lock.report_17-05-2022_23:57:09.docx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/.~lock.report_23-05-2022_10:07:40.docx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_19-05-2022_00:45:24.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20-01-2023_00:22:54.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20-01-2023_01:30:59.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_21-05-2022_19:59:50.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_23-05-2022_09:59:11.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_23-05-2022_10:07:40.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_23-05-2022_10:14:03.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/DVWA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/DVWA.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,16 +23,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nathan/Desktop/Thesis/Thesis_Code&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;debugger.dataViews.python.type.renderers&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/nathan/Desktop/Thesis/BLind_Injection_Script/blindSQLi-master/blindSQLi.py",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="blindSQLi" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Thesis_Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/Pen_Tester_Env/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../BLind_Injection_Script/blindSQLi-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../BLind_Injection_Script/blindSQLi-master/blindSQLi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Thesis_Code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,6 +75,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.blindSQLi" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674179114083</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart.">
+      <created>1675022963747</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675022963747</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +151,14 @@
     <MESSAGE value="Implemented Basic Error Based SQL Injection scan on the DVWA website (Hard coded login page value), links are taken from spider csv results." />
     <MESSAGE value="Successfully performs Tests on DVWA and XVWA + added several if conditions to avoid scanning the same link more than once + Succesfully removed annoying parsing error messages + Began work on penetrating OrangeHRM" />
     <MESSAGE value="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)" />
+    <MESSAGE value="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart." />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="sqliStringsAttemptedInTotal" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
