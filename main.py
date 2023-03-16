@@ -1,6 +1,7 @@
 # Imports
 import math
 import random
+import traceback
 from datetime import datetime
 from bs4 import BeautifulSoup as bs, MarkupResemblesLocatorWarning, XMLParsedAsHTMLWarning
 from urllib.parse import urljoin
@@ -26,7 +27,7 @@ hit_type["DVWA"] = []
 hit_type["XVWA"] = []
 hit_type["Orange_HRM"] = []
 hit_type["Mutillidae"] = []
-hit_type["WebGoat"] = []
+hit_type["Webgoat"] = []
 
 # A Dictionary containing dataframes which contain info regarding a website
 reportDetails = {}
@@ -35,7 +36,7 @@ reportDetails = {}
 
 # It is important that the names of the sites below match the respective csv files name perfectly.
 # list_of_source_csvs = ["BWAPP", "DVWA", "Mutillidae", "Orange_HRM", "Webgoat", "XVWA"]
-list_of_source_csvs = ["DVWA", "XVWA"]
+list_of_source_csvs = ["DVWA", "XVWA", "Orange_HRM", "Mutillidae", "Webgoat"]
 
 urls_to_test = {}
 vulnerable_urls = []
@@ -193,6 +194,7 @@ def generateReports():
     except Exception as e:
         print("\nError In Report Generation! :")
         print(e)
+        traceback.print_exc()
 
 
 # This function simulates a penetration test on a website, and allows the reports to be generated without scrapes
@@ -532,6 +534,7 @@ def DVWA_error_based(urls):
     except Exception as e:
         print("\nDVWA Error: \n")
         print(e)
+        traceback.print_exc()
 
     # Get the current time when all tests end
     timeEnded = getCurrentDateTime()
@@ -586,9 +589,13 @@ def DVWA_Blind(urls):
             else:
                 safeWebPagesInSite["DVWA"].append(url)
 
+        timeEnded = getCurrentDateTime()
+        total_seconds["DVWA"] += differenceInSeconds(timeStarted, timeEnded)
+
     except Exception as e:
         print("\nBlind DVWA Error: \n")
         print(e)
+        traceback.print_exc()
 
 def XVWA_error_based(urls):
 
@@ -620,6 +627,7 @@ def XVWA_error_based(urls):
     except Exception as e:
         print("\nXVWA Error: \n")
         print(e)
+        traceback.print_exc()
 
     timeEnded = getCurrentDateTime()
     total_seconds["XVWA"] += differenceInSeconds(timeStarted, timeEnded)
@@ -655,9 +663,13 @@ def XVWA_Blind(urls):
             else:
                 safeWebPagesInSite["XVWA"].append(url)
 
+        timeEnded = getCurrentDateTime()
+        total_seconds["XVWA"] += differenceInSeconds(timeStarted, timeEnded)
+
     except Exception as e:
         print("\nBlind XVWA Error: \n")
         print(e)
+        traceback.print_exc()
 
 def OrangeHRM_error_based(urls):
 
@@ -697,9 +709,67 @@ def OrangeHRM_error_based(urls):
     except Exception as e:
         print("\nOrange_HRM Error: \n")
         print(e)
+        traceback.print_exc()
 
     timeEnded = getCurrentDateTime()
     total_seconds["Orange_HRM"] += differenceInSeconds(timeStarted, timeEnded)
+
+def OrangeHRM_Blind(urls):
+
+    print("\n --- BLIND SQL --- \n")
+
+    total_seconds["Orange_HRM"] = 0
+    timeStarted = getCurrentDateTime()
+    sqliStringsPerWebsite["Orange_HRM"] = []
+
+    try:
+
+        sqliStringsAttemptedInTotal["Orange_HRM"] = 0
+        successful_hit_type["Orange_HRM"] = []
+        vulnerableWebPagesInSite["Orange_HRM"] = []
+        safeWebPagesInSite["Orange_HRM"] = []
+        hit_type["Orange_HRM"].append("BLind SQL Injection")
+
+        # Firstly, create a logged-in session in order to create requests
+
+        s.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
+            'Cookie': 'security=low; PHPSESSID=geo7gb3ehf5gfnbhrvuqu545i7'
+        }
+
+        # Firstly, create a logged-in session in order to create requests
+        resp = s.get('http://localhost:1234/OrangeHRM/symfony/web/index.php/auth/login')
+        parsed_html = bs(resp.content, features="html.parser")
+        input_value = parsed_html.body.find('input', attrs={'name': '_csrf_token'}).get("value")
+        data_dict = {"txtUsername": 'admin', "txtPassword": 'Mcast1234!', "Submit": "LOGIN", "_csrf_token":input_value}
+
+        response = s.post("http://localhost:1234/OrangeHRM/symfony/web/index.php/auth/validateCredentials", data_dict)
+        cookies = response.cookies
+        response_content = response.content.decode()
+
+
+        # Then test other urls
+
+        for url in urls["Orange_HRM"]:
+
+            if blind_sql(url, cookies):
+
+                vulnerableWebPagesInSite["Orange_HRM"].append(url)
+
+                vulnerable_urls.append("Orange_HRM: " + url)
+
+                if "Blind SQL Injection" not in successful_hit_type["Orange_HRM"]:
+                    successful_hit_type["Orange_HRM"].append("Blind SQL Injection")
+            else:
+                safeWebPagesInSite["Orange_HRM"].append(url)
+
+        timeEnded = getCurrentDateTime()
+        total_seconds["Orange_HRM"] += differenceInSeconds(timeStarted, timeEnded)
+
+    except Exception as e:
+        print("\nBlind Orange_HRM Error: \n")
+        print(e)
+        traceback.print_exc()
 
 def Mutillidae_error_based(urls):
 
@@ -724,9 +794,46 @@ def Mutillidae_error_based(urls):
     except Exception as e:
         print("\nMutillidae Error: \n")
         print(e)
+        traceback.print_exc()
 
     timeEnded = getCurrentDateTime()
     total_seconds["Mutillidae"] += differenceInSeconds(timeStarted, timeEnded)
+
+def Mutillidae_Blind(urls):
+    print("\n --- BLIND SQL --- \n")
+
+    total_seconds["Mutillidae"] = 0
+    timeStarted = getCurrentDateTime()
+    sqliStringsPerWebsite["Mutillidae"] = []
+
+    try:
+
+        sqliStringsAttemptedInTotal["Mutillidae"] = 0
+        successful_hit_type["Mutillidae"] = []
+        vulnerableWebPagesInSite["Mutillidae"] = []
+        safeWebPagesInSite["Mutillidae"] = []
+        hit_type["Mutillidae"].append("BLind SQL Injection")
+
+        for url in urls["Mutillidae"]:
+
+            if blind_sql(url, None):
+
+                vulnerableWebPagesInSite["Mutillidae"].append(url)
+
+                vulnerable_urls.append("Mutillidae: " + url)
+
+                if "Blind SQL Injection" not in successful_hit_type["Mutillidae"]:
+                    successful_hit_type["Mutillidae"].append("Blind SQL Injection")
+            else:
+                safeWebPagesInSite["Mutillidae"].append(url)
+
+        timeEnded = getCurrentDateTime()
+        total_seconds["Mutillidae"] += differenceInSeconds(timeStarted, timeEnded)
+
+    except Exception as e:
+        print("\nBlind Mutillidae Error: \n")
+        print(e)
+        traceback.print_exc()
 
 def WebGoat_error_based(urls):
 
@@ -767,9 +874,48 @@ def WebGoat_error_based(urls):
     except Exception as e:
         print("\nWebgoat Error: \n")
         print(e)
+        traceback.print_exc()
 
     timeEnded = getCurrentDateTime()
     total_seconds["WebGoat"] += differenceInSeconds(timeStarted, timeEnded)
+
+def WebGoat_Blind(urls):
+
+    print("\n --- BLIND SQL --- \n")
+
+    total_seconds["Webgoat"] = 0
+    timeStarted = getCurrentDateTime()
+    sqliStringsPerWebsite["Webgoat"] = []
+
+    try:
+
+        sqliStringsAttemptedInTotal["Webgoat"] = 0
+        successful_hit_type["Webgoat"] = []
+        vulnerableWebPagesInSite["Webgoat"] = []
+        safeWebPagesInSite["Webgoat"] = []
+        hit_type["Webgoat"].append("BLind SQL Injection")
+
+        for url in urls["Webgoat"]:
+
+            if blind_sql(url, None):
+
+                vulnerableWebPagesInSite["Webgoat"].append(url)
+
+                vulnerable_urls.append("Webgoat: " + url)
+
+                if "Blind SQL Injection" not in successful_hit_type["Webgoat"]:
+                    successful_hit_type["Webgoat"].append("Blind SQL Injection")
+            else:
+                safeWebPagesInSite["Webgoat"].append(url)
+
+        timeEnded = getCurrentDateTime()
+        total_seconds["Webgoat"] += differenceInSeconds(timeStarted, timeEnded)
+
+    except Exception as e:
+        print("\nBlind Webgoat Error: \n")
+        print(e)
+        traceback.print_exc()
+
 
 if __name__ == '__main__':
 
@@ -786,23 +932,43 @@ if __name__ == '__main__':
 
     if not testMode:
 
-        # Test urls accordingly
-        with requests.Session() as s:
-            # DVWA_error_based(urls_to_test)
-            DVWA_Blind(urls_to_test)
+        if "DVWA" in list_of_source_csvs:
+            # Test urls accordingly
+            with requests.Session() as s:
+                # DVWA_error_based(urls_to_test)
+                DVWA_Blind(urls_to_test)
 
-        with requests.Session() as s:
-            # XVWA_error_based(urls_to_test)
-            XVWA_Blind(urls_to_test)
+        if "XVWA" in list_of_source_csvs:
+            with requests.Session() as s:
+                # XVWA_error_based(urls_to_test)
+                XVWA_Blind(urls_to_test)
 
-        # with requests.Session() as s:
-        #     OrangeHRM_error_based(urls_to_test)
+        if "Orange_HRM" in list_of_source_csvs:
+            with requests.Session() as s:
+            #     OrangeHRM_error_based(urls_to_test)
+                OrangeHRM_Blind(urls_to_test)
 
-        # with requests.Session() as s:
-        #     Mutillidae_error_based(urls_to_test)
+        # TODO: Investigate Lack of investigated links and failed detections in Mutillidae
+        if "Mutillidae" in list_of_source_csvs:
+            with requests.Session() as s:
+            #     Mutillidae_error_based(urls_to_test)
+                Mutillidae_Blind(urls_to_test)
 
-        # with requests.Session() as s:
-        #     WebGoat_error_based(urls_to_test)
+        # TODO: Investigate Lack of detections in the Webgoat urls
+        if "Webgoat" in list_of_source_csvs:
+            with requests.Session() as s:
+            #     WebGoat_error_based(urls_to_test)
+                WebGoat_Blind(urls_to_test)
+
+        # TODO: Implement Juice Shop
+
+        # TODO: Implement Moodle
+
+        # TODO: Implement bWAPP
+
+        # TODO: Implement BodgeIt
+
+        # TODO: Implement WackoPicko
 
     else:
         populateTestData("DVWA", False)

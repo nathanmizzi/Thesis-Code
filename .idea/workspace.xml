@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart.">
+    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/DVWA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/DVWA.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,15 +22,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/nathan/Desktop/Thesis/BLind_Injection_Script/blindSQLi-master/blindSQLi.py",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nathan/Desktop/Thesis/BLind_Injection_Script/blindSQLi-master/blindSQLi.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="blindSQLi" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Thesis_Code" />
@@ -76,8 +75,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.blindSQLi" />
+      <item itemvalue="Python.main" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675022963747</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments.">
+      <created>1676420340428</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676420340428</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +158,8 @@
     <MESSAGE value="Successfully performs Tests on DVWA and XVWA + added several if conditions to avoid scanning the same link more than once + Succesfully removed annoying parsing error messages + Began work on penetrating OrangeHRM" />
     <MESSAGE value="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)" />
     <MESSAGE value="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart." />
+    <MESSAGE value="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
