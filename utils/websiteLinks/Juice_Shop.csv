@@ -1,0 +1,624 @@
+Processed,Id,Req. Timestamp,Method,URI,Code,Reason,RTT,Size Resp. Header,Size Resp. Body,Highest Alert,Note,Flags
+true,4268,Thu Mar 16 16:21:33 GMT 2023,GET,http://localhost:3000/,200,OK,9,466,1987,Medium,false,Seed
+true,4274,Thu Mar 16 16:21:33 GMT 2023,GET,http://localhost:3000/runtime.js,200,OK,37,479,3228,Medium,false,Seed
+true,4275,Thu Mar 16 16:21:33 GMT 2023,GET,http://localhost:3000/polyfills.js,200,OK,37,481,54536,Medium,false,Seed
+true,4276,Thu Mar 16 16:21:33 GMT 2023,GET,http://localhost:3000/main.js,200,OK,39,483,397662,Medium,false,Seed
+true,4277,Thu Mar 16 16:21:33 GMT 2023,GET,http://localhost:3000/styles.css,200,OK,33,469,607678,Medium,false,Seed
+true,4278,Thu Mar 16 16:21:33 GMT 2023,GET,http://localhost:3000/vendor.js,200,OK,41,485,1378209,Medium,false,Seed
+true,4279,Thu Mar 16 16:21:34 GMT 2023,GET,http://localhost:3000/assets/public/favicon_js.ico,200,OK,7,456,15086,Medium,false,Seed
+true,4280,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,8,389,18791,Medium,false,Seed
+true,4281,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEX34,200,OK,13,164,96,Low,false,Seed
+true,4282,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,200,OK,22,475,28269,Medium,false,Seed
+true,4283,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,66,384,20,Medium,false,Seed
+true,4284,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,72,306,0,Medium,false,Seed
+true,4285,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,107,384,20,Medium,false,Seed
+true,4286,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,111,389,18791,Medium,false,Seed
+true,4287,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,118,389,18791,Medium,false,Seed
+true,4288,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,137,389,18791,Medium,false,Seed
+true,4289,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,200,OK,128,431,75029,Medium,false,Seed
+true,4290,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/MaterialIcons-Regular.woff2,200,OK,96,431,60840,Medium,false,Seed
+true,4291,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/languages,200,OK,165,388,4511,Medium,false,Seed
+true,4292,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=iwrGsjlLLPlfPg8nAACk,101,Switching Protocols,31,129,0,Medium,false,Seed
+true,4293,Thu Mar 16 16:21:36 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEX6D&sid=iwrGsjlLLPlfPg8nAACk,200,OK,32,147,2,Medium,false,Seed
+true,4294,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEX6F&sid=iwrGsjlLLPlfPg8nAACk,200,OK,50,164,32,Medium,false,Seed
+true,4295,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,29,306,0,Medium,false,Seed
+true,4296,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,200,OK,219,389,12880,Medium,false,Seed
+true,4297,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,301,414,624,Medium,false,Seed
+true,4298,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,308,414,624,Medium,false,Seed
+true,4299,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/api/Quantitys/,200,OK,274,418,5991,Medium,false,Seed
+true,4300,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,200,OK,62,431,15291,Medium,false,Seed
+true,4301,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,200,OK,63,431,29163,Medium,false,Seed
+true,4302,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,200,OK,62,431,19833,Medium,false,Seed
+true,4303,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,200,OK,61,431,35878,Medium,false,Seed
+true,4304,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,200,OK,59,431,19001,Medium,false,Seed
+true,4305,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,200,OK,59,431,15072,Medium,false,Seed
+true,4306,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,200,OK,58,431,17080,Medium,false,Seed
+true,4307,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,200,OK,57,431,15910,Medium,false,Seed
+true,4308,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,200,OK,55,431,17038,Medium,false,Seed
+true,4309,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,200,OK,54,431,21524,Medium,false,Seed
+true,4310,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,200,OK,41,431,26934,Medium,false,Seed
+true,4311,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,200,OK,57,432,93641,Medium,false,Seed
+true,4312,Thu Mar 16 16:21:36 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEX7V&sid=iwrGsjlLLPlfPg8nAACk,200,OK,406,163,1,Medium,false,Seed
+true,4313,Thu Mar 16 16:21:37 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEXD-&sid=iwrGsjlLLPlfPg8nAACk,200,OK,99,163,1,Medium,false,Seed
+true,4314,Thu Mar 16 16:21:37 GMT 2023,GET,http://localhost:3000/,304,Not Modified,6,391,0,Medium,false,Seed
+true,4318,Thu Mar 16 16:21:37 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,24,391,0,Medium,false,Seed
+true,4319,Thu Mar 16 16:21:37 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,24,392,0,Medium,false,Seed
+true,4320,Thu Mar 16 16:21:37 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,23,394,0,Medium,false,Seed
+true,4321,Thu Mar 16 16:21:37 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,23,393,0,Medium,false,Seed
+true,4322,Thu Mar 16 16:21:37 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,20,393,0,Medium,false,Seed
+true,4323,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,13,306,0,Medium,false,Seed
+true,4324,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,22,392,0,Medium,false,Seed
+true,4325,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEXPi,200,OK,13,164,96,Low,false,Seed
+true,4326,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,45,304,0,Medium,false,Seed
+true,4327,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,48,306,0,Medium,false,Seed
+true,4328,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,74,384,20,Medium,false,Seed
+true,4329,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,79,389,18791,Medium,false,Seed
+true,4330,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,87,389,18791,Medium,false,Seed
+true,4331,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,91,389,18791,Medium,false,Seed
+true,4332,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,79,393,0,Medium,false,Seed
+true,4333,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,117,306,0,Medium,false,Seed
+true,4334,Thu Mar 16 16:21:38 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEXS1&sid=cr-mYTLL3Qu5ir0TAACm,200,OK,17,147,2,Medium,false,Seed
+true,4335,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEXS2&sid=cr-mYTLL3Qu5ir0TAACm,200,OK,17,164,32,Medium,false,Seed
+true,4336,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=cr-mYTLL3Qu5ir0TAACm,101,Switching Protocols,17,129,0,Medium,false,Seed
+true,4337,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,7,306,0,Medium,false,Seed
+true,4338,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,118,306,0,Medium,false,Seed
+true,4339,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,212,333,0,Medium,false,Seed
+true,4340,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,210,414,624,Medium,false,Seed
+true,4341,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,172,336,0,Medium,false,Seed
+true,4342,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,23,392,0,Medium,false,Seed
+true,4343,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,51,392,0,Medium,false,Seed
+true,4344,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4345,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,48,392,0,Medium,false,Seed
+true,4346,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,52,392,0,Medium,false,Seed
+true,4347,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4348,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4349,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4350,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,46,393,0,Medium,false,Seed
+true,4351,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,44,392,0,Medium,false,Seed
+true,4352,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,43,392,0,Medium,false,Seed
+true,4353,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,36,392,0,Medium,false,Seed
+true,4354,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEXSW&sid=cr-mYTLL3Qu5ir0TAACm,200,OK,381,163,1,Medium,false,Seed
+true,4355,Thu Mar 16 16:21:38 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEXYU&sid=cr-mYTLL3Qu5ir0TAACm,200,OK,99,163,1,Medium,false,Seed
+true,4359,Thu Mar 16 16:21:42 GMT 2023,GET,http://localhost:3000/tutorial.js,200,OK,5,481,29373,Medium,false,Seed
+true,4360,Thu Mar 16 16:21:42 GMT 2023,GET,http://localhost:3000/assets/public/images/hackingInstructor.png,200,OK,11,427,824,Medium,false,Seed
+true,4361,Thu Mar 16 16:21:42 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,11,306,0,Medium,false,Seed
+true,4362,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/,304,Not Modified,5,391,0,Medium,false,Seed
+true,4366,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,21,391,0,Medium,false,Seed
+true,4367,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,27,392,0,Medium,false,Seed
+true,4368,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,29,394,0,Medium,false,Seed
+true,4369,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,28,393,0,Medium,false,Seed
+true,4370,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,24,393,0,Medium,false,Seed
+true,4371,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,11,306,0,Medium,false,Seed
+true,4372,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,10,392,0,Medium,false,Seed
+true,4373,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEZHE,200,OK,8,164,96,Low,false,Seed
+true,4374,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,34,304,0,Medium,false,Seed
+true,4375,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,39,306,0,Medium,false,Seed
+true,4376,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,55,384,20,Medium,false,Seed
+true,4377,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,58,389,18791,Medium,false,Seed
+true,4378,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,64,389,18791,Medium,false,Seed
+true,4379,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,64,393,0,Medium,false,Seed
+true,4380,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,96,306,0,Medium,false,Seed
+true,4381,Thu Mar 16 16:21:45 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEZJ8&sid=2k9jzPlScwz3vvp0AACo,200,OK,19,147,2,Medium,false,Seed
+true,4382,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEZJ9&sid=2k9jzPlScwz3vvp0AACo,200,OK,18,164,32,Medium,false,Seed
+true,4383,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=2k9jzPlScwz3vvp0AACo,101,Switching Protocols,18,129,0,Medium,false,Seed
+true,4384,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,102,306,0,Medium,false,Seed
+true,4385,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,178,414,624,Medium,false,Seed
+true,4386,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,183,333,0,Medium,false,Seed
+true,4387,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,145,336,0,Medium,false,Seed
+true,4388,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,68,392,0,Medium,false,Seed
+true,4389,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,70,392,0,Medium,false,Seed
+true,4390,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,69,392,0,Medium,false,Seed
+true,4391,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,66,392,0,Medium,false,Seed
+true,4392,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,64,392,0,Medium,false,Seed
+true,4393,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,63,392,0,Medium,false,Seed
+true,4394,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,61,392,0,Medium,false,Seed
+true,4395,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,60,392,0,Medium,false,Seed
+true,4396,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,58,393,0,Medium,false,Seed
+true,4397,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,58,392,0,Medium,false,Seed
+true,4398,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,55,392,0,Medium,false,Seed
+true,4399,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,47,392,0,Medium,false,Seed
+true,4400,Thu Mar 16 16:21:45 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEZJp&sid=2k9jzPlScwz3vvp0AACo,200,OK,320,163,1,Medium,false,Seed
+true,4401,Thu Mar 16 16:21:47 GMT 2023,GET,http://localhost:3000/font-mfizz.woff,200,OK,6,430,40904,Medium,false,Seed
+true,4402,Thu Mar 16 16:21:48 GMT 2023,GET,http://localhost:3000/rest/user/whoami,200,OK,15,385,128,Medium,false,Seed
+true,4403,Thu Mar 16 16:21:48 GMT 2023,GET,http://localhost:3000/rest/captcha/,200,OK,267,384,48,Medium,false,Seed
+true,4404,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/,304,Not Modified,5,391,0,Medium,false,Seed
+true,4409,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,18,391,0,Medium,false,Seed
+true,4410,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,24,394,0,Medium,false,Seed
+true,4411,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,24,392,0,Medium,false,Seed
+true,4412,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,24,393,0,Medium,false,Seed
+true,4413,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,20,393,0,Medium,false,Seed
+true,4414,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,12,306,0,Medium,false,Seed
+true,4415,Thu Mar 16 16:21:51 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,12,392,0,Medium,false,Seed
+true,4416,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEaq1,200,OK,7,164,96,Low,false,Seed
+true,4417,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,40,304,0,Medium,false,Seed
+true,4418,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,43,306,0,Medium,false,Seed
+true,4419,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,61,384,20,Medium,false,Seed
+true,4420,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,64,389,18791,Medium,false,Seed
+true,4421,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,71,389,18791,Medium,false,Seed
+true,4422,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,71,393,0,Medium,false,Seed
+true,4423,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,127,306,0,Medium,false,Seed
+true,4424,Thu Mar 16 16:21:52 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEasK&sid=hb38uYYtxcOFw8qgAACq,200,OK,44,147,2,Medium,false,Seed
+true,4425,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEasL&sid=hb38uYYtxcOFw8qgAACq,200,OK,44,164,32,Medium,false,Seed
+true,4426,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=hb38uYYtxcOFw8qgAACq,101,Switching Protocols,44,129,0,Medium,false,Seed
+true,4427,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,139,306,0,Medium,false,Seed
+true,4428,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,222,414,624,Medium,false,Seed
+true,4429,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,224,333,0,Medium,false,Seed
+true,4430,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,181,336,0,Medium,false,Seed
+true,4431,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,34,392,0,Medium,false,Seed
+true,4432,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,43,392,0,Medium,false,Seed
+true,4433,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4434,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,51,392,0,Medium,false,Seed
+true,4435,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4436,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4437,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4438,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4439,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,51,393,0,Medium,false,Seed
+true,4440,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4441,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4442,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4443,Thu Mar 16 16:21:52 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEatB&sid=hb38uYYtxcOFw8qgAACq,200,OK,322,163,1,Medium,false,Seed
+true,4444,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/,304,Not Modified,6,391,0,Medium,false,Seed
+true,4448,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,25,391,0,Medium,false,Seed
+true,4449,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,25,392,0,Medium,false,Seed
+true,4450,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,25,394,0,Medium,false,Seed
+true,4451,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,26,393,0,Medium,false,Seed
+true,4452,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,24,393,0,Medium,false,Seed
+true,4453,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,12,306,0,Medium,false,Seed
+true,4454,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,20,392,0,Medium,false,Seed
+true,4455,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEb87,200,OK,16,164,96,Low,false,Seed
+true,4456,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,57,304,0,Medium,false,Seed
+true,4457,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,61,306,0,Medium,false,Seed
+true,4458,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,68,384,20,Medium,false,Seed
+true,4459,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,72,389,18791,Medium,false,Seed
+true,4460,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,83,389,18791,Medium,false,Seed
+true,4461,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,78,393,0,Medium,false,Seed
+true,4462,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,106,306,0,Medium,false,Seed
+true,4463,Thu Mar 16 16:21:53 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEbA4&sid=cPxpfkt4gHurkbIkAACs,200,OK,31,147,2,Medium,false,Seed
+true,4464,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEbA4.0&sid=cPxpfkt4gHurkbIkAACs,200,OK,30,164,32,Medium,false,Seed
+true,4465,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=cPxpfkt4gHurkbIkAACs,101,Switching Protocols,31,129,0,Medium,false,Seed
+true,4466,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,150,306,0,Medium,false,Seed
+true,4467,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,211,414,624,Medium,false,Seed
+true,4468,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,212,333,0,Medium,false,Seed
+true,4469,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,190,336,0,Medium,false,Seed
+true,4470,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,25,392,0,Medium,false,Seed
+true,4471,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4472,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4473,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,51,392,0,Medium,false,Seed
+true,4474,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,55,392,0,Medium,false,Seed
+true,4475,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,56,392,0,Medium,false,Seed
+true,4476,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4477,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,52,392,0,Medium,false,Seed
+true,4478,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,51,393,0,Medium,false,Seed
+true,4479,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4480,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,48,392,0,Medium,false,Seed
+true,4481,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,39,392,0,Medium,false,Seed
+true,4482,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEbAk&sid=cPxpfkt4gHurkbIkAACs,200,OK,418,163,1,Medium,false,Seed
+true,4483,Thu Mar 16 16:21:53 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEbHJ&sid=cPxpfkt4gHurkbIkAACs,200,OK,98,163,1,Medium,false,Seed
+true,4484,Thu Mar 16 16:21:54 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,20,306,0,Medium,false,Seed
+true,4485,Thu Mar 16 16:21:54 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,28,336,0,Medium,false,Seed
+true,4486,Thu Mar 16 16:21:57 GMT 2023,GET,http://localhost:3000/rest/user/whoami,304,Not Modified,15,304,0,Medium,false,Seed
+true,4487,Thu Mar 16 16:21:57 GMT 2023,GET,http://localhost:3000/rest/captcha/,200,OK,199,384,48,Medium,false,Seed
+true,4488,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/,304,Not Modified,5,391,0,Medium,false,Seed
+true,4493,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,19,391,0,Medium,false,Seed
+true,4494,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,22,392,0,Medium,false,Seed
+true,4495,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,23,394,0,Medium,false,Seed
+true,4496,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,23,393,0,Medium,false,Seed
+true,4497,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,20,393,0,Medium,false,Seed
+true,4498,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,13,306,0,Medium,false,Seed
+true,4499,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,21,392,0,Medium,false,Seed
+true,4500,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEcwh,200,OK,16,164,96,Low,false,Seed
+true,4501,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,45,304,0,Medium,false,Seed
+true,4502,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,49,306,0,Medium,false,Seed
+true,4503,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,64,384,20,Medium,false,Seed
+true,4504,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,67,389,18791,Medium,false,Seed
+true,4505,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,80,389,18791,Medium,false,Seed
+true,4506,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,77,393,0,Medium,false,Seed
+true,4507,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,111,306,0,Medium,false,Seed
+true,4508,Thu Mar 16 16:22:00 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEcyg&sid=pIQdRnxoiXnc58_PAACu,200,OK,24,147,2,Medium,false,Seed
+true,4509,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEcyg.0&sid=pIQdRnxoiXnc58_PAACu,200,OK,23,164,32,Medium,false,Seed
+true,4510,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=pIQdRnxoiXnc58_PAACu,101,Switching Protocols,23,129,0,Medium,false,Seed
+true,4511,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,123,306,0,Medium,false,Seed
+true,4512,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,191,414,624,Medium,false,Seed
+true,4513,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,193,333,0,Medium,false,Seed
+true,4514,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,167,336,0,Medium,false,Seed
+true,4515,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,22,392,0,Medium,false,Seed
+true,4516,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4517,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,52,392,0,Medium,false,Seed
+true,4518,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4519,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,59,392,0,Medium,false,Seed
+true,4520,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,56,392,0,Medium,false,Seed
+true,4521,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,57,392,0,Medium,false,Seed
+true,4522,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,55,392,0,Medium,false,Seed
+true,4523,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,53,393,0,Medium,false,Seed
+true,4524,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,51,392,0,Medium,false,Seed
+true,4525,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4526,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4527,Thu Mar 16 16:22:00 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEczH&sid=pIQdRnxoiXnc58_PAACu,200,OK,244,163,1,Medium,false,Seed
+true,4528,Thu Mar 16 16:22:01 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEd1D&sid=pIQdRnxoiXnc58_PAACu,200,OK,90,163,1,Medium,false,Seed
+true,4529,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,14,306,0,Medium,false,Seed
+true,4530,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/api/Feedbacks/,200,OK,28,415,1438,Medium,false,Seed
+true,4531,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/7.jpg,200,OK,31,431,27982,Medium,false,Seed
+true,4532,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/2.jpg,200,OK,32,431,27164,Medium,false,Seed
+true,4533,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/1.jpg,200,OK,33,431,33013,Medium,false,Seed
+true,4534,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/3.jpg,200,OK,33,431,29510,Medium,false,Seed
+true,4535,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/4.jpg,200,OK,33,431,28821,Medium,false,Seed
+true,4536,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/6.jpg,200,OK,32,431,27737,Medium,false,Seed
+true,4537,Thu Mar 16 16:22:03 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/5.png,200,OK,34,432,112486,Medium,false,Seed
+true,4538,Thu Mar 16 16:22:04 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,9,470,3047,Medium,false,Seed
+true,4539,Thu Mar 16 16:22:11 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,9,470,3047,Medium,false,Seed
+true,4540,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/,304,Not Modified,7,391,0,Medium,false,Seed
+true,4545,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,24,391,0,Medium,false,Seed
+true,4546,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,30,392,0,Medium,false,Seed
+true,4547,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,30,394,0,Medium,false,Seed
+true,4548,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,29,393,0,Medium,false,Seed
+true,4549,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,27,393,0,Medium,false,Seed
+true,4550,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,21,306,0,Medium,false,Seed
+true,4551,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEiwK,200,OK,22,164,96,Low,false,Seed
+true,4552,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,27,392,0,Medium,false,Seed
+true,4553,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,60,304,0,Medium,false,Seed
+true,4554,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,66,306,0,Medium,false,Seed
+true,4555,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,98,384,20,Medium,false,Seed
+true,4556,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,112,389,18791,Medium,false,Seed
+true,4557,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,123,389,18791,Medium,false,Seed
+true,4558,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,122,393,0,Medium,false,Seed
+true,4559,Thu Mar 16 16:22:25 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEiys&sid=wB_174PGBnZl2xXbAACw,200,OK,23,147,2,Medium,false,Seed
+true,4560,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEiys.0&sid=wB_174PGBnZl2xXbAACw,200,OK,23,164,32,Medium,false,Seed
+true,4561,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=wB_174PGBnZl2xXbAACw,101,Switching Protocols,24,129,0,Medium,false,Seed
+true,4562,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,175,306,0,Medium,false,Seed
+true,4563,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,187,306,0,Medium,false,Seed
+true,4564,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,253,414,624,Medium,false,Seed
+true,4565,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,255,333,0,Medium,false,Seed
+true,4566,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,237,336,0,Medium,false,Seed
+true,4567,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4568,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,60,392,0,Medium,false,Seed
+true,4569,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,63,392,0,Medium,false,Seed
+true,4570,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,61,392,0,Medium,false,Seed
+true,4571,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,60,392,0,Medium,false,Seed
+true,4572,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,58,392,0,Medium,false,Seed
+true,4573,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,58,392,0,Medium,false,Seed
+true,4574,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,57,392,0,Medium,false,Seed
+true,4575,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,55,393,0,Medium,false,Seed
+true,4576,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4577,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,52,392,0,Medium,false,Seed
+true,4578,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4579,Thu Mar 16 16:22:25 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEizI&sid=wB_174PGBnZl2xXbAACw,200,OK,231,163,1,Medium,false,Seed
+true,4580,Thu Mar 16 16:22:27 GMT 2023,GET,http://localhost:3000/rest/user/whoami,304,Not Modified,12,304,0,Medium,false,Seed
+true,4581,Thu Mar 16 16:22:27 GMT 2023,GET,http://localhost:3000/rest/captcha/,200,OK,220,384,49,Medium,false,Seed
+true,4582,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,13,306,0,Medium,false,Seed
+true,4583,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/api/Feedbacks/,304,Not Modified,31,333,0,Medium,false,Seed
+true,4584,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/1.jpg,304,Not Modified,39,392,0,Medium,false,Seed
+true,4585,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/3.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4586,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/4.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4587,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/2.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4588,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/6.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4589,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/5.png,304,Not Modified,38,393,0,Medium,false,Seed
+true,4590,Thu Mar 16 16:22:33 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/7.jpg,304,Not Modified,39,392,0,Medium,false,Seed
+true,4591,Thu Mar 16 16:22:34 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,7,470,3047,Medium,false,Seed
+true,4592,Thu Mar 16 16:22:41 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,6,470,3047,Medium,false,Seed
+true,4593,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/,304,Not Modified,6,391,0,Medium,false,Seed
+true,4598,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,22,391,0,Medium,false,Seed
+true,4599,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,28,392,0,Medium,false,Seed
+true,4600,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,28,394,0,Medium,false,Seed
+true,4601,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,29,393,0,Medium,false,Seed
+true,4602,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,25,393,0,Medium,false,Seed
+true,4603,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,12,306,0,Medium,false,Seed
+true,4604,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,18,392,0,Medium,false,Seed
+true,4605,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEp1H,200,OK,15,164,96,Low,false,Seed
+true,4606,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,45,304,0,Medium,false,Seed
+true,4607,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,51,306,0,Medium,false,Seed
+true,4608,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,63,384,20,Medium,false,Seed
+true,4609,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,67,389,18791,Medium,false,Seed
+true,4610,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,81,389,18791,Medium,false,Seed
+true,4611,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,80,393,0,Medium,false,Seed
+true,4612,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,108,306,0,Medium,false,Seed
+true,4613,Thu Mar 16 16:22:50 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEp3F&sid=Zr87OmpavWHEFqiHAACy,200,OK,24,147,2,Medium,false,Seed
+true,4614,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEp3F.0&sid=Zr87OmpavWHEFqiHAACy,200,OK,24,164,32,Medium,false,Seed
+true,4615,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=Zr87OmpavWHEFqiHAACy,101,Switching Protocols,24,129,0,Medium,false,Seed
+true,4616,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,129,306,0,Medium,false,Seed
+true,4617,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,194,414,624,Medium,false,Seed
+true,4618,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,195,333,0,Medium,false,Seed
+true,4619,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,171,336,0,Medium,false,Seed
+true,4620,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,60,392,0,Medium,false,Seed
+true,4621,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,62,392,0,Medium,false,Seed
+true,4622,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,61,392,0,Medium,false,Seed
+true,4623,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,65,392,0,Medium,false,Seed
+true,4624,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,48,392,0,Medium,false,Seed
+true,4625,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,59,392,0,Medium,false,Seed
+true,4626,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,63,392,0,Medium,false,Seed
+true,4627,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,61,392,0,Medium,false,Seed
+true,4628,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,64,392,0,Medium,false,Seed
+true,4629,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,61,393,0,Medium,false,Seed
+true,4630,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,57,392,0,Medium,false,Seed
+true,4631,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,63,392,0,Medium,false,Seed
+true,4632,Thu Mar 16 16:22:50 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEp3w&sid=Zr87OmpavWHEFqiHAACy,200,OK,228,163,1,Medium,false,Seed
+true,4633,Thu Mar 16 16:22:53 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,5,306,0,Medium,false,Seed
+true,4634,Thu Mar 16 16:22:55 GMT 2023,GET,http://localhost:3000/api/SecurityQuestions/,200,OK,17,417,1934,Medium,false,Seed
+true,4635,Thu Mar 16 16:22:56 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,10,306,0,Medium,false,Seed
+true,4636,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/,304,Not Modified,6,391,0,Medium,false,Seed
+true,4641,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,20,392,0,Medium,false,Seed
+true,4642,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,26,391,0,Medium,false,Seed
+true,4643,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,26,394,0,Medium,false,Seed
+true,4644,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,25,393,0,Medium,false,Seed
+true,4645,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,22,393,0,Medium,false,Seed
+true,4646,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,21,306,0,Medium,false,Seed
+true,4647,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEt0w,200,OK,19,164,96,Low,false,Seed
+true,4648,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,23,392,0,Medium,false,Seed
+true,4649,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,43,304,0,Medium,false,Seed
+true,4650,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,51,306,0,Medium,false,Seed
+true,4651,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,63,384,20,Medium,false,Seed
+true,4652,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,68,389,18791,Medium,false,Seed
+true,4653,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,85,389,18791,Medium,false,Seed
+true,4654,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,81,393,0,Medium,false,Seed
+true,4655,Thu Mar 16 16:23:06 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEt30&sid=Dt0gd7Zkgy2RHVNCAAC0,200,OK,38,147,2,Medium,false,Seed
+true,4656,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEt31&sid=Dt0gd7Zkgy2RHVNCAAC0,200,OK,37,164,32,Medium,false,Seed
+true,4657,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=Dt0gd7Zkgy2RHVNCAAC0,101,Switching Protocols,37,129,0,Medium,false,Seed
+true,4658,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,158,306,0,Medium,false,Seed
+true,4659,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,164,306,0,Medium,false,Seed
+true,4660,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,229,414,624,Medium,false,Seed
+true,4661,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,231,333,0,Medium,false,Seed
+true,4662,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,210,336,0,Medium,false,Seed
+true,4663,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,22,392,0,Medium,false,Seed
+true,4664,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,47,392,0,Medium,false,Seed
+true,4665,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,45,392,0,Medium,false,Seed
+true,4666,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,48,392,0,Medium,false,Seed
+true,4667,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,56,392,0,Medium,false,Seed
+true,4668,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,55,392,0,Medium,false,Seed
+true,4669,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,52,392,0,Medium,false,Seed
+true,4670,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4671,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,51,393,0,Medium,false,Seed
+true,4672,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4673,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,48,392,0,Medium,false,Seed
+true,4674,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4675,Thu Mar 16 16:23:06 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEt3i&sid=Dt0gd7Zkgy2RHVNCAAC0,200,OK,212,163,1,Medium,false,Seed
+true,4676,Thu Mar 16 16:23:07 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,23,306,0,Medium,false,Seed
+true,4677,Thu Mar 16 16:23:07 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,34,336,0,Medium,false,Seed
+true,4678,Thu Mar 16 16:23:12 GMT 2023,GET,http://localhost:3000/rest/user/whoami,304,Not Modified,10,304,0,Medium,false,Seed
+true,4679,Thu Mar 16 16:23:12 GMT 2023,GET,http://localhost:3000/rest/captcha/,200,OK,247,384,49,Medium,false,Seed
+true,4680,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/,304,Not Modified,8,391,0,Medium,false,Seed
+true,4685,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,16,391,0,Medium,false,Seed
+true,4686,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,21,394,0,Medium,false,Seed
+true,4687,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,21,392,0,Medium,false,Seed
+true,4688,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,21,393,0,Medium,false,Seed
+true,4689,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,18,393,0,Medium,false,Seed
+true,4690,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,13,306,0,Medium,false,Seed
+true,4691,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,20,392,0,Medium,false,Seed
+true,4692,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEv6s,200,OK,15,164,96,Low,false,Seed
+true,4693,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,48,306,0,Medium,false,Seed
+true,4694,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,55,304,0,Medium,false,Seed
+true,4695,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,63,384,20,Medium,false,Seed
+true,4696,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,66,389,18791,Medium,false,Seed
+true,4697,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,81,389,18791,Medium,false,Seed
+true,4698,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,80,393,0,Medium,false,Seed
+true,4699,Thu Mar 16 16:23:15 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEv8r&sid=usw6czS2unJKoIfxAAC2,200,OK,14,147,2,Medium,false,Seed
+true,4700,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,153,306,0,Medium,false,Seed
+true,4701,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEv8r.0&sid=usw6czS2unJKoIfxAAC2,200,OK,45,164,32,Medium,false,Seed
+true,4702,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=usw6czS2unJKoIfxAAC2,101,Switching Protocols,46,129,0,Medium,false,Seed
+true,4703,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,151,306,0,Medium,false,Seed
+true,4704,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,218,414,624,Medium,false,Seed
+true,4705,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,219,333,0,Medium,false,Seed
+true,4706,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,191,336,0,Medium,false,Seed
+true,4707,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,22,392,0,Medium,false,Seed
+true,4708,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,47,392,0,Medium,false,Seed
+true,4709,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,46,392,0,Medium,false,Seed
+true,4710,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4711,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,57,392,0,Medium,false,Seed
+true,4712,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,55,392,0,Medium,false,Seed
+true,4713,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4714,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4715,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,51,393,0,Medium,false,Seed
+true,4716,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4717,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,48,392,0,Medium,false,Seed
+true,4718,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4719,Thu Mar 16 16:23:15 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhEv9h&sid=usw6czS2unJKoIfxAAC2,200,OK,459,163,1,Medium,false,Seed
+true,4720,Thu Mar 16 16:23:16 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,21,306,0,Medium,false,Seed
+true,4721,Thu Mar 16 16:23:16 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,30,336,0,Medium,false,Seed
+true,4722,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,16,306,0,Medium,false,Seed
+true,4723,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/api/Feedbacks/,304,Not Modified,30,333,0,Medium,false,Seed
+true,4724,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/3.jpg,304,Not Modified,36,392,0,Medium,false,Seed
+true,4725,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/1.jpg,304,Not Modified,37,392,0,Medium,false,Seed
+true,4726,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/2.jpg,304,Not Modified,37,392,0,Medium,false,Seed
+true,4727,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/4.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4728,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/5.png,304,Not Modified,38,393,0,Medium,false,Seed
+true,4729,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/6.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4730,Thu Mar 16 16:23:18 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/7.jpg,304,Not Modified,37,392,0,Medium,false,Seed
+true,4731,Thu Mar 16 16:23:20 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,6,470,3047,Medium,false,Seed
+true,4732,Thu Mar 16 16:23:27 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,6,470,3047,Medium,false,Seed
+true,4733,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/,304,Not Modified,10,391,0,Medium,false,Seed
+true,4737,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,31,391,0,Medium,false,Seed
+true,4738,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,38,392,0,Medium,false,Seed
+true,4739,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,37,394,0,Medium,false,Seed
+true,4740,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,38,393,0,Medium,false,Seed
+true,4741,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,34,393,0,Medium,false,Seed
+true,4742,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,19,306,0,Medium,false,Seed
+true,4743,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhE_mJ,200,OK,19,164,96,Low,false,Seed
+true,4744,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,23,392,0,Medium,false,Seed
+true,4745,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,60,304,0,Medium,false,Seed
+true,4746,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,82,306,0,Medium,false,Seed
+true,4747,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,99,384,20,Medium,false,Seed
+true,4748,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,103,389,18791,Medium,false,Seed
+true,4749,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,122,389,18791,Medium,false,Seed
+true,4750,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,123,393,0,Medium,false,Seed
+true,4751,Thu Mar 16 16:23:42 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhE_op&sid=TqMj3-xCCdf7SD8LAAC4,200,OK,22,147,2,Medium,false,Seed
+true,4752,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhE_oq&sid=TqMj3-xCCdf7SD8LAAC4,200,OK,22,164,32,Medium,false,Seed
+true,4753,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=TqMj3-xCCdf7SD8LAAC4,101,Switching Protocols,22,129,0,Medium,false,Seed
+true,4754,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/languages,200,OK,181,388,4511,Medium,false,Seed
+true,4755,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,190,306,0,Medium,false,Seed
+true,4756,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,262,414,624,Medium,false,Seed
+true,4757,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,264,333,0,Medium,false,Seed
+true,4758,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,242,336,0,Medium,false,Seed
+true,4759,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,24,392,0,Medium,false,Seed
+true,4760,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,42,392,0,Medium,false,Seed
+true,4761,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,57,392,0,Medium,false,Seed
+true,4762,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,60,392,0,Medium,false,Seed
+true,4763,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,56,392,0,Medium,false,Seed
+true,4764,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4765,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4766,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,55,392,0,Medium,false,Seed
+true,4767,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,57,393,0,Medium,false,Seed
+true,4768,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,56,392,0,Medium,false,Seed
+true,4769,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,44,392,0,Medium,false,Seed
+true,4770,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,54,392,0,Medium,false,Seed
+true,4771,Thu Mar 16 16:23:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhE_pG&sid=TqMj3-xCCdf7SD8LAAC4,200,OK,212,163,1,Medium,false,Seed
+true,4772,Thu Mar 16 16:23:43 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,23,306,0,Medium,false,Seed
+true,4773,Thu Mar 16 16:23:43 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,30,336,0,Medium,false,Seed
+true,4774,Thu Mar 16 16:23:46 GMT 2023,GET,http://localhost:3000/rest/user/whoami,304,Not Modified,10,304,0,Medium,false,Seed
+true,4775,Thu Mar 16 16:23:46 GMT 2023,GET,http://localhost:3000/rest/captcha/,200,OK,763,384,47,Medium,false,Seed
+true,4776,Thu Mar 16 16:23:51 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,12,306,0,Medium,false,Seed
+true,4777,Thu Mar 16 16:23:51 GMT 2023,GET,http://localhost:3000/api/Feedbacks/,304,Not Modified,31,333,0,Medium,false,Seed
+true,4778,Thu Mar 16 16:23:52 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/1.jpg,304,Not Modified,40,392,0,Medium,false,Seed
+true,4779,Thu Mar 16 16:23:52 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/2.jpg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4780,Thu Mar 16 16:23:52 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/3.jpg,304,Not Modified,40,392,0,Medium,false,Seed
+true,4781,Thu Mar 16 16:23:52 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/4.jpg,304,Not Modified,40,392,0,Medium,false,Seed
+true,4782,Thu Mar 16 16:23:52 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/5.png,304,Not Modified,41,393,0,Medium,false,Seed
+true,4783,Thu Mar 16 16:23:52 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/6.jpg,304,Not Modified,40,392,0,Medium,false,Seed
+true,4784,Thu Mar 16 16:23:52 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/7.jpg,304,Not Modified,40,392,0,Medium,false,Seed
+true,4785,Thu Mar 16 16:23:53 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,8,470,3047,Medium,false,Seed
+true,4786,Thu Mar 16 16:23:59 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,6,470,3047,Medium,false,Seed
+true,4787,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/,304,Not Modified,5,391,0,Medium,false,Seed
+true,4791,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,27,392,0,Medium,false,Seed
+true,4792,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,27,394,0,Medium,false,Seed
+true,4793,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,27,393,0,Medium,false,Seed
+true,4794,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,29,391,0,Medium,false,Seed
+true,4795,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,26,393,0,Medium,false,Seed
+true,4796,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,11,306,0,Medium,false,Seed
+true,4797,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,20,392,0,Medium,false,Seed
+true,4798,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6BN,200,OK,17,164,96,Low,false,Seed
+true,4799,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,41,304,0,Medium,false,Seed
+true,4800,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,45,306,0,Medium,false,Seed
+true,4801,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,63,384,20,Medium,false,Seed
+true,4802,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,66,389,18791,Medium,false,Seed
+true,4803,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,79,389,18791,Medium,false,Seed
+true,4804,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,76,393,0,Medium,false,Seed
+true,4805,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,108,306,0,Medium,false,Seed
+true,4806,Thu Mar 16 16:24:08 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6DT&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,46,147,2,Medium,false,Seed
+true,4807,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6DV&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,47,164,32,Medium,false,Seed
+true,4808,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=16FJ6FXdZZ1FR17FAAC6,101,Switching Protocols,47,129,0,Medium,false,Seed
+true,4809,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,157,306,0,Medium,false,Seed
+true,4810,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,218,333,0,Medium,false,Seed
+true,4811,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,217,414,624,Medium,false,Seed
+true,4812,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,195,336,0,Medium,false,Seed
+true,4813,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,11,392,0,Medium,false,Seed
+true,4814,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,30,392,0,Medium,false,Seed
+true,4815,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,43,392,0,Medium,false,Seed
+true,4816,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4817,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,39,392,0,Medium,false,Seed
+true,4818,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4819,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4820,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4821,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,40,393,0,Medium,false,Seed
+true,4822,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4823,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,38,392,0,Medium,false,Seed
+true,4824,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,28,392,0,Medium,false,Seed
+true,4825,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,22,306,0,Medium,false,Seed
+true,4826,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/assets/public/images/products/no-results.png,200,OK,26,430,31321,Medium,false,Seed
+true,4827,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/rest/memories/,200,OK,40,387,2994,Medium,false,Seed
+true,4828,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/assets/public/images/uploads/%F0%9F%98%BC-,200,OK,32,466,1987,Medium,false,Seed
+true,4829,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/assets/public/images/uploads/magn(et)ificent!-1571814229653.jpg,200,OK,33,433,107952,Medium,false,Seed
+true,4830,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/assets/public/images/uploads/my-rare-collectors-item!-%5B%CC%B2%CC%85$%CC%B2%CC%85(%CC%B2%CC%85-%CD%A1%C2%B0-%CD%9C%CA%96-%CD%A1%C2%B0%CC%B2%CC%85)%CC%B2%CC%85$%CC%B2%CC%85%5D-1572603645543.jpg,200,OK,32,432,71262,Medium,false,Seed
+true,4831,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/assets/public/images/uploads/favorite-hiking-place.png,200,OK,33,432,666735,Medium,false,Seed
+true,4832,Thu Mar 16 16:24:08 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6EF&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,2369,163,1,Medium,false,Seed
+true,4833,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/assets/public/images/uploads/IMG_4253.jpg,200,OK,41,435,6264316,Medium,false,Seed
+true,4834,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6qR&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,27,163,1,Medium,false,Seed
+true,4835,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6qv&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,99,163,1,Medium,false,Seed
+true,4836,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6uO&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,74,163,1,Medium,false,Seed
+true,4837,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6va&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,99,163,1,Medium,false,Seed
+true,4838,Thu Mar 16 16:24:11 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF6x9&sid=16FJ6FXdZZ1FR17FAAC6,200,OK,98,163,1,Medium,false,Seed
+true,4842,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/,304,Not Modified,6,391,0,Medium,false,Seed
+true,4847,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,20,391,0,Medium,false,Seed
+true,4848,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,25,392,0,Medium,false,Seed
+true,4849,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,24,394,0,Medium,false,Seed
+true,4850,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,24,393,0,Medium,false,Seed
+true,4851,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,21,393,0,Medium,false,Seed
+true,4852,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,17,306,0,Medium,false,Seed
+true,4853,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF86a,200,OK,16,164,96,Low,false,Seed
+true,4854,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,20,392,0,Medium,false,Seed
+true,4855,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,45,304,0,Medium,false,Seed
+true,4856,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,50,306,0,Medium,false,Seed
+true,4857,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,68,384,20,Medium,false,Seed
+true,4858,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,72,389,18791,Medium,false,Seed
+true,4859,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,90,389,18791,Medium,false,Seed
+true,4860,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,86,393,0,Medium,false,Seed
+true,4861,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/languages,200,OK,117,388,4511,Medium,false,Seed
+true,4862,Thu Mar 16 16:24:16 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF88c&sid=y2tpvZSlfkX5gC88AAC8,200,OK,24,147,2,Medium,false,Seed
+true,4863,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF88d&sid=y2tpvZSlfkX5gC88AAC8,200,OK,23,164,32,Medium,false,Seed
+true,4864,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=y2tpvZSlfkX5gC88AAC8,101,Switching Protocols,23,129,0,Medium,false,Seed
+true,4865,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,138,306,0,Medium,false,Seed
+true,4866,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,211,414,624,Medium,false,Seed
+true,4867,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,213,333,0,Medium,false,Seed
+true,4868,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,184,336,0,Medium,false,Seed
+true,4869,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,19,392,0,Medium,false,Seed
+true,4870,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,43,392,0,Medium,false,Seed
+true,4871,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4872,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,43,392,0,Medium,false,Seed
+true,4873,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,48,392,0,Medium,false,Seed
+true,4874,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,47,392,0,Medium,false,Seed
+true,4875,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,46,392,0,Medium,false,Seed
+true,4876,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,45,392,0,Medium,false,Seed
+true,4877,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,44,393,0,Medium,false,Seed
+true,4878,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,43,392,0,Medium,false,Seed
+true,4879,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4880,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,29,392,0,Medium,false,Seed
+true,4881,Thu Mar 16 16:24:16 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF89G&sid=y2tpvZSlfkX5gC88AAC8,200,OK,1689,163,1,Medium,false,Seed
+true,4882,Thu Mar 16 16:24:18 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF8Zh&sid=y2tpvZSlfkX5gC88AAC8,200,OK,99,163,1,Medium,false,Seed
+true,4883,Thu Mar 16 16:24:18 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF8bF&sid=y2tpvZSlfkX5gC88AAC8,200,OK,97,163,1,Medium,false,Seed
+true,4884,Thu Mar 16 16:24:18 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF8cp&sid=y2tpvZSlfkX5gC88AAC8,200,OK,99,163,1,Medium,false,Seed
+true,4885,Thu Mar 16 16:24:18 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF8eN&sid=y2tpvZSlfkX5gC88AAC8,200,OK,98,163,1,Medium,false,Seed
+true,4886,Thu Mar 16 16:24:18 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhF8fw&sid=y2tpvZSlfkX5gC88AAC8,200,OK,98,163,1,Medium,false,Seed
+true,4887,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,15,306,0,Medium,false,Seed
+true,4888,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/api/Feedbacks/,304,Not Modified,28,333,0,Medium,false,Seed
+true,4889,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/1.jpg,304,Not Modified,31,392,0,Medium,false,Seed
+true,4890,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/2.jpg,304,Not Modified,30,392,0,Medium,false,Seed
+true,4891,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/3.jpg,304,Not Modified,32,392,0,Medium,false,Seed
+true,4892,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/4.jpg,304,Not Modified,31,392,0,Medium,false,Seed
+true,4893,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/5.png,304,Not Modified,31,393,0,Medium,false,Seed
+true,4894,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/6.jpg,304,Not Modified,31,392,0,Medium,false,Seed
+true,4895,Thu Mar 16 16:24:19 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/7.jpg,304,Not Modified,31,392,0,Medium,false,Seed
+true,4896,Thu Mar 16 16:24:22 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,6,470,3047,Medium,false,Seed
+true,4897,Thu Mar 16 16:24:28 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,7,470,3047,Medium,false,Seed
+true,4898,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/,304,Not Modified,10,391,0,Medium,false,Seed
+true,4903,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/runtime.js,304,Not Modified,26,391,0,Medium,false,Seed
+true,4904,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/polyfills.js,304,Not Modified,32,392,0,Medium,false,Seed
+true,4905,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/vendor.js,304,Not Modified,32,394,0,Medium,false,Seed
+true,4906,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/main.js,304,Not Modified,32,393,0,Medium,false,Seed
+true,4907,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/styles.css,304,Not Modified,29,393,0,Medium,false,Seed
+true,4908,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,21,306,0,Medium,false,Seed
+true,4909,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhFEIw,200,OK,21,164,96,Low,false,Seed
+true,4910,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/assets/i18n/en.json,304,Not Modified,26,392,0,Medium,false,Seed
+true,4911,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,304,Not Modified,62,304,0,Medium,false,Seed
+true,4912,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,81,306,0,Medium,false,Seed
+true,4913,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/admin/application-version,200,OK,98,384,20,Medium,false,Seed
+true,4914,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,104,389,18791,Medium,false,Seed
+true,4915,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,200,OK,125,389,18791,Medium,false,Seed
+true,4916,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/assets/public/images/JuiceShop_Logo.png,304,Not Modified,125,393,0,Medium,false,Seed
+true,4917,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/languages,304,Not Modified,166,306,0,Medium,false,Seed
+true,4918,Thu Mar 16 16:24:42 GMT 2023,POST,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhFELl&sid=ND989WaVLqQ1QgYtAAC-,200,OK,30,147,2,Medium,false,Seed
+true,4919,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhFELm&sid=ND989WaVLqQ1QgYtAAC-,200,OK,30,164,32,Medium,false,Seed
+true,4920,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=websocket&sid=ND989WaVLqQ1QgYtAAC-,101,Switching Protocols,31,129,0,Medium,false,Seed
+true,4921,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/rest/products/search?q=,304,Not Modified,184,306,0,Medium,false,Seed
+true,4922,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,200,OK,260,414,624,Medium,false,Seed
+true,4923,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/api/Challenges/?name=Score%20Board,304,Not Modified,262,333,0,Medium,false,Seed
+true,4924,Thu Mar 16 16:24:41 GMT 2023,GET,http://localhost:3000/api/Quantitys/,304,Not Modified,229,336,0,Medium,false,Seed
+true,4925,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_juice.jpg,304,Not Modified,22,392,0,Medium,false,Seed
+true,4926,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/apple_pressings.jpg,304,Not Modified,50,392,0,Medium,false,Seed
+true,4927,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/banana_juice.jpg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4928,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/artwork2.jpg,304,Not Modified,53,392,0,Medium,false,Seed
+true,4929,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/carrot_juice.jpeg,304,Not Modified,59,392,0,Medium,false,Seed
+true,4930,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg,304,Not Modified,58,392,0,Medium,false,Seed
+true,4931,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fruit_press.jpg,304,Not Modified,57,392,0,Medium,false,Seed
+true,4932,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/lemon_juice.jpg,304,Not Modified,52,392,0,Medium,false,Seed
+true,4933,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/green_smoothie.jpg,304,Not Modified,56,392,0,Medium,false,Seed
+true,4934,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/permafrost.jpg,304,Not Modified,54,393,0,Medium,false,Seed
+true,4935,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/melon_bike.jpeg,304,Not Modified,49,392,0,Medium,false,Seed
+true,4936,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/assets/public/images/products/fan_facemask.jpg,304,Not Modified,41,392,0,Medium,false,Seed
+true,4937,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhFEMS&sid=ND989WaVLqQ1QgYtAAC-,200,OK,353,163,1,Medium,false,Seed
+true,4938,Thu Mar 16 16:24:42 GMT 2023,GET,http://localhost:3000/socket.io/?EIO=4&transport=polling&t=ORhFES0&sid=ND989WaVLqQ1QgYtAAC-,200,OK,99,163,1,Medium,false,Seed
+true,4939,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/rest/admin/application-configuration,304,Not Modified,16,306,0,Medium,false,Seed
+true,4940,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/api/Feedbacks/,304,Not Modified,31,333,0,Medium,false,Seed
+true,4941,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/1.jpg,304,Not Modified,37,392,0,Medium,false,Seed
+true,4942,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/2.jpg,304,Not Modified,36,392,0,Medium,false,Seed
+true,4943,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/3.jpg,304,Not Modified,36,392,0,Medium,false,Seed
+true,4944,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/4.jpg,304,Not Modified,37,392,0,Medium,false,Seed
+true,4945,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/5.png,304,Not Modified,37,393,0,Medium,false,Seed
+true,4946,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/6.jpg,304,Not Modified,37,392,0,Medium,false,Seed
+true,4947,Thu Mar 16 16:24:44 GMT 2023,GET,http://localhost:3000/assets/public/images/carousel/7.jpg,304,Not Modified,37,392,0,Medium,false,Seed
+true,4948,Thu Mar 16 16:24:45 GMT 2023,GET,http://localhost:3000/ftp/legal.md,200,OK,9,470,3047,Medium,false,Seed

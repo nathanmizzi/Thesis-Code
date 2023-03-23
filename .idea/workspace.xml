@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments.">
+    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added BLind SQL Injection testing to 3 more websites, added some TODO's to help track remaining work left on websites + Identified some bugs within the testing of some more websites and marked those down aswell + further quality of life improvements and changes.">
+      <change afterPath="$PROJECT_DIR$/utils/websiteLinks/Juice_Shop.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/BWAPP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/BWAPP.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +29,15 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nathan/Desktop/Thesis/BLind_Injection_Script/blindSQLi-master/blindSQLi.py&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nathan/Desktop/Thesis/Thesis_Code/utils/websiteLinks&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils/websiteLinks" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="blindSQLi" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Thesis_Code" />
@@ -137,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676420340428</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added BLind SQL Injection testing to 3 more websites, added some TODO's to help track remaining work left on websites + Identified some bugs within the testing of some more websites and marked those down aswell + further quality of life improvements and changes.">
+      <created>1678980031275</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678980031275</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +173,8 @@
     <MESSAGE value="Added Tests to much more websites + Began using a Kaggle dataset to test for vulnerabilities in websites + Fixed Report generation and began displaying charts and updated info on each website being tested + Fixed an issue were logins would not be retained after changing a url.&#10;&#10;(Five Websites remain to be added to reach website dataset goal)" />
     <MESSAGE value="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart." />
     <MESSAGE value="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments." />
+    <MESSAGE value="Added BLind SQL Injection testing to 3 more websites, added some TODO's to help track remaining work left on websites + Identified some bugs within the testing of some more websites and marked those down aswell + further quality of life improvements and changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BLind SQL Injection testing to 3 more websites, added some TODO's to help track remaining work left on websites + Identified some bugs within the testing of some more websites and marked those down aswell + further quality of life improvements and changes." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
