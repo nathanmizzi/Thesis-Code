@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added BLind SQL Injection testing to 3 more websites, added some TODO's to help track remaining work left on websites + Identified some bugs within the testing of some more websites and marked those down aswell + further quality of life improvements and changes.">
-      <change afterPath="$PROJECT_DIR$/utils/websiteLinks/Juice_Shop.csv" afterDir="false" />
+    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added Support for both The Juice Shop webpage and the BodgeIt webpage, this includes both blind and error based injection. Also made it so that if a page contains no forms the page is skipped and not attempted several times in error based. Also did more bug fixing, mostly related to errors in report generation.">
+      <change afterPath="$PROJECT_DIR$/reports/Orange_HRM Blind.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/websiteLinks/BWAPP.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/websiteLinks/BWAPP.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678980031275</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Support for both The Juice Shop webpage and the BodgeIt webpage, this includes both blind and error based injection. Also made it so that if a page contains no forms the page is skipped and not attempted several times in error based. Also did more bug fixing, mostly related to errors in report generation.">
+      <created>1679598774697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679598774697</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +180,9 @@
     <MESSAGE value="Added a function to provide dummy data and avoid a full scrape + turned the pie chart into a donut chart." />
     <MESSAGE value="Altered some links within the DVWA that were causing issues with blind SQL Injection + Succesfully implemented blind SQL Injection on DVWA and XVWA + Made other minor adjustments." />
     <MESSAGE value="Added BLind SQL Injection testing to 3 more websites, added some TODO's to help track remaining work left on websites + Identified some bugs within the testing of some more websites and marked those down aswell + further quality of life improvements and changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BLind SQL Injection testing to 3 more websites, added some TODO's to help track remaining work left on websites + Identified some bugs within the testing of some more websites and marked those down aswell + further quality of life improvements and changes." />
+    <MESSAGE value="Added Support for both The Juice Shop webpage and the BodgeIt webpage, this includes both blind and error based injection. Also made it so that if a page contains no forms the page is skipped and not attempted several times in error based. Also did more bug fixing, moslty related to errors in report generation." />
+    <MESSAGE value="Added Support for both The Juice Shop webpage and the BodgeIt webpage, this includes both blind and error based injection. Also made it so that if a page contains no forms the page is skipped and not attempted several times in error based. Also did more bug fixing, mostly related to errors in report generation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Support for both The Juice Shop webpage and the BodgeIt webpage, this includes both blind and error based injection. Also made it so that if a page contains no forms the page is skipped and not attempted several times in error based. Also did more bug fixing, mostly related to errors in report generation." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

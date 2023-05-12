@@ -38,7 +38,7 @@ reportDetails = {}
 
 # It is important that the names of the sites below match the respective csv files name perfectly.
 # list_of_source_csvs = ["BWAPP", "DVWA", "Mutillidae", "Orange_HRM", "Webgoat", "XVWA"]
-list_of_source_csvs = ["Bodgeit"]
+list_of_source_csvs = ["Webgoat"]
 
 urls_to_test = {}
 vulnerable_urls = []
@@ -695,7 +695,11 @@ def OrangeHRM_error_based(urls):
 
     try:
 
+        sqliStringsAttemptedInTotal["Orange_HRM"] = 0
         successful_hit_type["Orange_HRM"] = []
+        vulnerableWebPagesInSite["Orange_HRM"] = []
+        safeWebPagesInSite["Orange_HRM"] = []
+        hit_type["Orange_HRM"].append("Error Based SQL Injection")
 
         # Firstly, create a logged-in session in order to create requests
         resp = s.get('http://localhost:1234/OrangeHRM/symfony/web/index.php/auth/login')
@@ -714,11 +718,16 @@ def OrangeHRM_error_based(urls):
             try:
                 if sqlInjectionScan(url, cookies, "Orange_HRM"):
 
+                    vulnerableWebPagesInSite["Orange_HRM"].append(url)
+                    vulnerable_urls.append("Orange_HRM: " + url)
+
                     if url not in vulnerable_urls:
                         vulnerable_urls.append("Orange_HRM: " + url)
 
                     if "SQL Injection" not in successful_hit_type["Orange_HRM"]:
                         successful_hit_type["Orange_HRM"].append("SQL Injection")
+                else:
+                    safeWebPagesInSite["Orange_HRM"].append(url)
             except:
                 continue
 
@@ -771,7 +780,6 @@ def OrangeHRM_Blind(urls):
             if blind_sql(url, cookies):
 
                 vulnerableWebPagesInSite["Orange_HRM"].append(url)
-
                 vulnerable_urls.append("Orange_HRM: " + url)
 
                 if "Blind SQL Injection" not in successful_hit_type["Orange_HRM"]:
@@ -795,17 +803,27 @@ def Mutillidae_error_based(urls):
 
     try:
 
+        sqliStringsAttemptedInTotal["Mutillidae"] = 0
         successful_hit_type["Mutillidae"] = []
+        vulnerableWebPagesInSite["Mutillidae"] = []
+        safeWebPagesInSite["Mutillidae"] = []
+        hit_type["Mutillidae"].append("Error Based SQL Injection")
 
         for url in urls["Mutillidae"]:
 
             if sqlInjectionScan(url, None, "Mutillidae"):
+
+                vulnerableWebPagesInSite["Mutillidae"].append(url)
+
+                vulnerable_urls.append("Mutillidae: " + url)
 
                 if url not in vulnerable_urls:
                     vulnerable_urls.append("Mutillidae: " + url)
 
                 if "SQL Injection" not in successful_hit_type["Mutillidae"]:
                     successful_hit_type["Mutillidae"].append("SQL Injection")
+            else:
+                safeWebPagesInSite["Mutillidae"].append(url)
 
     except Exception as e:
         print("\nMutillidae Error: \n")
@@ -853,13 +871,17 @@ def Mutillidae_Blind(urls):
 
 def WebGoat_error_based(urls):
 
-    total_seconds["WebGoat"] = 0
+    total_seconds["Webgoat"] = 0
     timeStarted = getCurrentDateTime()
-    sqliStringsPerWebsite["WebGoat"] = []
+    sqliStringsPerWebsite["Webgoat"] = []
 
     try:
 
+        sqliStringsAttemptedInTotal["Webgoat"] = 0
         successful_hit_type["Webgoat"] = []
+        vulnerableWebPagesInSite["Webgoat"] = []
+        safeWebPagesInSite["Webgoat"] = []
+        hit_type["Webgoat"].append("Error Based SQL Injection")
 
         # Firstly, create a logged-in session in order to create requests
         s.headers = {
@@ -881,11 +903,16 @@ def WebGoat_error_based(urls):
 
             if sqlInjectionScan(url, cookies, "Webgoat"):
 
+                vulnerableWebPagesInSite["Webgoat"].append(url)
+                vulnerable_urls.append("Webgoat: " + url)
+
                 if url not in vulnerable_urls:
                     vulnerable_urls.append("Webgoat: " + url)
 
                 if "SQL Injection" not in successful_hit_type["Webgoat"]:
                     successful_hit_type["Webgoat"].append("SQL Injection")
+            else:
+                safeWebPagesInSite["Webgoat"].append(url)
 
     except Exception as e:
         print("\nWebgoat Error: \n")
@@ -893,7 +920,7 @@ def WebGoat_error_based(urls):
         traceback.print_exc()
 
     timeEnded = getCurrentDateTime()
-    total_seconds["WebGoat"] += differenceInSeconds(timeStarted, timeEnded)
+    total_seconds["Webgoat"] += differenceInSeconds(timeStarted, timeEnded)
 
 def WebGoat_Blind(urls):
 
@@ -1133,16 +1160,14 @@ if __name__ == '__main__':
 
         if "Orange_HRM" in list_of_source_csvs:
             with requests.Session() as s:
-            #     OrangeHRM_error_based(urls_to_test)
-                OrangeHRM_Blind(urls_to_test)
+                 OrangeHRM_error_based(urls_to_test)
+            #    OrangeHRM_Blind(urls_to_test)
 
-        # TODO: Investigate Lack of investigated links and failed detections in Mutillidae
         if "Mutillidae" in list_of_source_csvs:
             with requests.Session() as s:
-            #     Mutillidae_error_based(urls_to_test)
+            #    Mutillidae_error_based(urls_to_test)
                 Mutillidae_Blind(urls_to_test)
 
-        # TODO: Investigate Lack of detections in the Webgoat urls
         if "Webgoat" in list_of_source_csvs:
             with requests.Session() as s:
             #     WebGoat_error_based(urls_to_test)
@@ -1153,17 +1178,10 @@ if __name__ == '__main__':
                 # Juice_Shop_error_based(urls_to_test)
                 Juice_Shop_Blind(urls_to_test)
 
-        # TODO: Implement Moodle
-
-        # TODO: Implement bWAPP
-
-        # TODO: Investigate Lack of investigated links and failed detections in Bodgeit
         if "Bodgeit" in list_of_source_csvs:
             with requests.Session() as s:
                 Bodgeit_error_based(urls_to_test)
                 Bodgeit_Blind(urls_to_test)
-
-        # TODO: Implement WackoPicko
 
     else:
         populateTestData("DVWA", False)
