@@ -38,7 +38,7 @@ reportDetails = {}
 
 # It is important that the names of the sites below match the respective csv files name perfectly.
 # list_of_source_csvs = ["BWAPP", "DVWA", "Mutillidae", "Orange_HRM", "Webgoat", "XVWA"]
-list_of_source_csvs = ["Orange_HRM"]
+list_of_source_csvs = ["Juice_Shop"]
 
 urls_to_test = {}
 vulnerable_urls = []
@@ -1180,7 +1180,7 @@ if __name__ == '__main__':
 
         if "Bodgeit" in list_of_source_csvs:
             with requests.Session() as s:
-                Bodgeit_error_based(urls_to_test)
+                # Bodgeit_error_based(urls_to_test)
                 Bodgeit_Blind(urls_to_test)
 
     else:

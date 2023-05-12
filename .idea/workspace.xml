@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Updated The Error Based Methods to further fix issues they had with statistics tracking + Added Reports of each website tested for compilation of data and discussion.">
+    <list default="true" id="d43f059b-5fac-44ac-b385-070d02ca0ce6" name="Changes" comment="Added Orange HRM BLind Report as it was corrupt previously">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Orange_HRM Blind.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,15 +22,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/nathan/Desktop/Thesis/Thesis_Code/reports",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nathan/Desktop/Thesis/Thesis_Code/reports&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/reports" />
@@ -165,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683896274254</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Orange HRM BLind Report as it was corrupt previously">
+      <created>1683896673693</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683896673693</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +197,8 @@
     <MESSAGE value="Added Support for both The Juice Shop webpage and the BodgeIt webpage, this includes both blind and error based injection. Also made it so that if a page contains no forms the page is skipped and not attempted several times in error based. Also did more bug fixing, moslty related to errors in report generation." />
     <MESSAGE value="Added Support for both The Juice Shop webpage and the BodgeIt webpage, this includes both blind and error based injection. Also made it so that if a page contains no forms the page is skipped and not attempted several times in error based. Also did more bug fixing, mostly related to errors in report generation." />
     <MESSAGE value="Updated The Error Based Methods to further fix issues they had with statistics tracking + Added Reports of each website tested for compilation of data and discussion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated The Error Based Methods to further fix issues they had with statistics tracking + Added Reports of each website tested for compilation of data and discussion." />
+    <MESSAGE value="Added Orange HRM BLind Report as it was corrupt previously" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Orange HRM BLind Report as it was corrupt previously" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
