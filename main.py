@@ -1184,7 +1184,39 @@ def Test_Site_error_based(urls):
     total_seconds["Test_Website"] += differenceInSeconds(timeStarted, timeEnded)
 
 def Test_Site_blind(urls):
-    pass
+    print("\n --- BLIND SQL --- \n")
+
+    total_seconds["Test_Website"] = 0
+    timeStarted = getCurrentDateTime()
+    sqliStringsPerWebsite["Test_Website"] = []
+
+    try:
+
+        sqliStringsAttemptedInTotal["Test_Website"] = 0
+        successful_hit_type["Test_Website"] = []
+        vulnerableWebPagesInSite["Test_Website"] = []
+        safeWebPagesInSite["Test_Website"] = []
+        hit_type["Test_Website"].append("BLind SQL Injection")
+
+        for url in urls["Test_Website"]:
+
+            if blind_sql(url, None):
+
+                vulnerableWebPagesInSite["Test_Website"].append(url)
+                vulnerable_urls.append("Test_Website: " + url)
+
+                if "Blind SQL Injection" not in successful_hit_type["Test_Website"]:
+                    successful_hit_type["Test_Website"].append("Blind SQL Injection")
+            else:
+                safeWebPagesInSite["Test_Website"].append(url)
+
+        timeEnded = getCurrentDateTime()
+        total_seconds["Test_Website"] += differenceInSeconds(timeStarted, timeEnded)
+
+    except Exception as e:
+        print("\nBlind Test_Website Error: \n")
+        print(e)
+        traceback.print_exc()
 
 if __name__ == '__main__':
 
