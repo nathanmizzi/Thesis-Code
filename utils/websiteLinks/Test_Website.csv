@@ -1,0 +1,8 @@
+Processed,Method,URI,Flags
+true,GET,http://127.0.0.1/Test_Website,Seed
+true,GET,http://127.0.0.1/robots.txt,Seed
+true,GET,http://127.0.0.1/sitemap.xml,Seed
+true,GET,http://127.0.0.1/Test_Website/,Seed
+true,GET,http://127.0.0.1/Test_Website/index.html,Seed
+true,GET,http://127.0.0.1/Test_Website/index.php,Seed
+true,POST,http://127.0.0.1/Test_Website/index.php,

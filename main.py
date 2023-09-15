@@ -13,6 +13,8 @@ from matplotlib import pyplot as plt
 from docx import Document
 from docx.shared import Inches, RGBColor
 
+worse_dataset = False
+
 # Metrics for pdf generation:
 total_seconds = {}
 successful_hit_type = {}
@@ -30,6 +32,8 @@ hit_type["Mutillidae"] = []
 hit_type["Webgoat"] = []
 hit_type["Juice_Shop"] = []
 hit_type["Bodgeit"] = []
+hit_type["Test_Website"] = []
+
 
 # A Dictionary containing dataframes which contain info regarding a website
 reportDetails = {}
@@ -37,8 +41,8 @@ reportDetails = {}
 # Contains all the Base URL's of the webpages to test on
 
 # It is important that the names of the sites below match the respective csv files name perfectly.
-# list_of_source_csvs = ["BWAPP", "DVWA", "Mutillidae", "Orange_HRM", "Webgoat", "XVWA"]
-list_of_source_csvs = ["Juice_Shop"]
+# list_of_source_csvs = ["BWAPP", "DVWA", "Mutillidae", "Orange_HRM", "Webgoat", "XVWA", "Test_Website"]
+list_of_source_csvs = ["DVWA", "XVWA", "Bodgeit", "Test_Website"]
 
 urls_to_test = {}
 vulnerable_urls = []
@@ -73,7 +77,7 @@ def generateReports():
 
     try:
 
-        dateTimeToday = datetime.now().strftime('%d-%m-%Y_%H:%M:%S')
+        dateTimeToday = datetime.now().strftime('%d-%m-%Y_%H-%M-%S')
 
         report = Document()
 
@@ -191,7 +195,9 @@ def generateReports():
 
             report.add_page_break()
 
-            report.save(f"reports/report_{dateTimeToday}.docx")
+            path = f"reports/report_{dateTimeToday}.docx"
+
+            report.save(path)
 
     except Exception as e:
         print("\nError In Report Generation! :")
@@ -261,7 +267,10 @@ def readWebsiteLinksCsv():
 
 def readSQLICsv():
 
-    df = pd.read_csv('utils/SQLI_Dataset/SQLIV3_Shrunken.csv')
+    if not worse_dataset:
+        df = pd.read_csv('utils/SQLI_Dataset/SQLIV3_Shrunken.csv')
+    else:
+        df = pd.read_csv('utils/SQLI_Dataset/SQLIV3_Shrunken_Worse.csv')
 
     for index, row in df.iterrows():
         try:
@@ -354,43 +363,43 @@ def isInjectable(response):
         "warning: mysql",
         "unclosed quotation mark after the character string",
         "quoted string not properly terminated",
-        "Uncaught mysqli_sql_exception",
-        "unexpected token"
+        "uncaught mysqli_sql_exception",
+        "unexpected token",
+        "data submitted ",
+        "you have logged in successfully"
     }
 
     for error in errors:
         if response.status_code != 404:
-            if error in response.content.decode(errors='ignore').lower():
+            if error in response.text.lower():
                 return True
 
     return False
 
 def sqlInjectionScan(url, cookies, nameOfWebsite):
 
-    for sqliString in sqliStrings:
+    if url not in tested_urls:
 
-        sqliStringsAttemptedInTotal[nameOfWebsite] += 1
+        print("TESTING URL: " + url)
 
-        if url not in tested_urls:
+        forms = get_all_forms(url, cookies)
 
-            print("TESTING URL: " + url)
+        if len(forms) >= 1:
+            print(f"[+] Detected {len(forms)} forms on {url}.")
+        else:
+            tested_urls.append(url)
 
-            forms = get_all_forms(url, cookies)
+        for form in forms:
+            form_details = get_form_details(form)
 
-            if len(forms) >= 1:
-                print(f"[+] Detected {len(forms)} forms on {url}.")
-            else:
-                tested_urls.append(url)
-                return False
-
-            for form in forms:
-                form_details = get_form_details(form)
-
-                try:
-                    if "xvwa" in url and form_details["inputs"][0]["name"] == "username": # Adding condition to skip login form for XVWA as it was causing issues
-                        continue
-                except:
+            try:
+                if "xvwa" in url and form_details["inputs"][0]["name"] == "username": # Adding condition to skip login form for XVWA as it was causing issues
                     continue
+            except:
+                continue
+
+            for sqliString in sqliStrings:
+                sqliStringsAttemptedInTotal[nameOfWebsite] += 1
 
                 for c in "\"'":
 
@@ -402,8 +411,8 @@ def sqlInjectionScan(url, cookies, nameOfWebsite):
                             except:
                                 pass
                         elif input_tag["type"] != "submit":
-                              # data[input_tag["name"]] = f"<1'1 or 1>" # New code that aims to catch more errors on a multitude of websites
-                              data[input_tag["name"]] = sqliString  # Takes a string from the Dataset containing sqli strings.
+                            # data[input_tag["name"]] = f"<1'1 or 1>" # New code that aims to catch more errors on a multitude of websites
+                            data[input_tag["name"]] = sqliString  # Takes a string from the Dataset containing sqli strings.
 
                     url = urljoin(url, form_details["action"])
                     if form_details["method"] == "post":
@@ -420,7 +429,6 @@ def sqlInjectionScan(url, cookies, nameOfWebsite):
 
                         sqliStringsPerWebsite[nameOfWebsite].append(sqliString)
                         tested_urls.append(url)
-
                         return True
 
     tested_urls.append(url)
@@ -523,13 +531,13 @@ def DVWA_error_based(urls):
             'Cookie': 'security=low; PHPSESSID=geo7gb3ehf5gfnbhrvuqu545i7'
         }
 
-        resp = s.get('http://127.0.0.1/login.php')
+        resp = s.get('http://127.0.0.1/dvwa/dvwa/login.php')
         parsed_html = bs(resp.content, features="html.parser")
         input_value = parsed_html.body.find('input', attrs={'name': 'user_token'}).get("value")
         data_dict = {"username": 'admin', "password": 'password', "Login": "Login",
                      "user_token": input_value}
 
-        response = s.post('http://127.0.0.1/login.php', data_dict)
+        response = s.post('http://127.0.0.1/dvwa/dvwa/login.php', data_dict)
         responseContent = response.content
         cookies = response.cookies
 
@@ -1132,6 +1140,52 @@ def Bodgeit_Blind(urls):
         print(e)
         traceback.print_exc()
 
+def Test_Site_error_based(urls):
+
+    print("\n --- Error Based SQL --- \n")
+
+    total_seconds["Test_Website"] = 0
+    timeStarted = getCurrentDateTime()
+    sqliStringsPerWebsite["Test_Website"] = []
+
+    try:
+        sqliStringsAttemptedInTotal["Test_Website"] = 0
+        successful_hit_type["Test_Website"] = []
+        vulnerableWebPagesInSite["Test_Website"] = []
+        safeWebPagesInSite["Test_Website"] = []
+        hit_type["Test_Website"].append("Error Based SQL Injection")
+
+        # Firstly, create a logged-in session in order to create requests
+
+        s.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
+            'Cookie': ''
+        }
+
+        for url in urls["Test_Website"]:
+
+            if sqlInjectionScan(url, None, "Test_Website"):
+
+                vulnerableWebPagesInSite["Test_Website"].append(url)
+
+                vulnerable_urls.append("Test_Website: " + url)
+
+                if "Error Based SQL Injection" not in successful_hit_type["Test_Website"]:
+                    successful_hit_type["Test_Website"].append("Error Based SQL Injection")
+            else:
+                safeWebPagesInSite["Test_Website"].append(url)
+    except Exception as e:
+        print("\nTest_Website Error: \n")
+        print(e)
+        traceback.print_exc()
+
+    # Get the current time when all tests end
+    timeEnded = getCurrentDateTime()
+    total_seconds["Test_Website"] += differenceInSeconds(timeStarted, timeEnded)
+
+def Test_Site_blind(urls):
+    pass
+
 if __name__ == '__main__':
 
     warnings.filterwarnings(action="ignore", category=MarkupResemblesLocatorWarning)
@@ -1140,7 +1194,7 @@ if __name__ == '__main__':
     # Populate array of urls from csv files
     readWebsiteLinksCsv()
 
-    # Populate array of SQL Injection strings from Kaggle Dataset
+    # Populate array of SQL Injection strings from Dataset
     readSQLICsv()
 
     testMode = False
@@ -1150,13 +1204,13 @@ if __name__ == '__main__':
         if "DVWA" in list_of_source_csvs:
             # Test urls accordingly
             with requests.Session() as s:
-                # DVWA_error_based(urls_to_test)
-                DVWA_Blind(urls_to_test)
+                DVWA_error_based(urls_to_test)
+                # DVWA_Blind(urls_to_test)
 
         if "XVWA" in list_of_source_csvs:
             with requests.Session() as s:
-                # XVWA_error_based(urls_to_test)
-                XVWA_Blind(urls_to_test)
+                XVWA_error_based(urls_to_test)
+                # XVWA_Blind(urls_to_test)
 
         if "Orange_HRM" in list_of_source_csvs:
             with requests.Session() as s:
@@ -1182,6 +1236,12 @@ if __name__ == '__main__':
             with requests.Session() as s:
                 # Bodgeit_error_based(urls_to_test)
                 Bodgeit_Blind(urls_to_test)
+
+        if "Test_Website" in list_of_source_csvs:
+            with requests.Session() as s:
+                Test_Site_error_based(urls_to_test)
+                # Test_Site_blind(urls_to_test)
+
 
     else:
         populateTestData("DVWA", False)
